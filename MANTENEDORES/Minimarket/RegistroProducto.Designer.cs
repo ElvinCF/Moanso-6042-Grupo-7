@@ -45,10 +45,10 @@
             this.label9 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.datosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
@@ -215,6 +215,22 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "DATOS:";
             // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(463, 142);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(94, 20);
+            this.textBox6.TabIndex = 17;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(363, 146);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(94, 13);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "COSTO UNIT: S/ ";
+            // 
             // button3
             // 
             this.button3.DialogResult = System.Windows.Forms.DialogResult.No;
@@ -231,22 +247,6 @@
             this.datosToolStripMenuItem.Name = "datosToolStripMenuItem";
             this.datosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.datosToolStripMenuItem.Text = "Datos";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(363, 146);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(94, 13);
-            this.label6.TabIndex = 16;
-            this.label6.Text = "COSTO UNIT: S/ ";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(463, 142);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(94, 20);
-            this.textBox6.TabIndex = 17;
             // 
             // panel1
             // 
