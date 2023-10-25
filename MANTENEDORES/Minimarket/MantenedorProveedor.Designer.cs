@@ -47,31 +47,32 @@
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.groupBox1.BackColor = System.Drawing.Color.LightSkyBlue;
             this.groupBox1.Controls.Add(this.textBox4);
             this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Controls.Add(this.textBox2);
             this.groupBox1.Controls.Add(this.textBox1);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.button2);
-            this.groupBox1.Controls.Add(this.button3);
+            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.checkBox1);
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.groupBox1.Location = new System.Drawing.Point(11, 11);
+            this.groupBox1.Location = new System.Drawing.Point(11, 57);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(320, 401);
+            this.groupBox1.Size = new System.Drawing.Size(320, 355);
             this.groupBox1.TabIndex = 13;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "DATOS DEL PROVEEDOR";
@@ -120,30 +121,30 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(239, 42);
+            this.button1.Location = new System.Drawing.Point(460, 57);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(76, 17);
+            this.button1.Size = new System.Drawing.Size(76, 25);
             this.button1.TabIndex = 2;
             this.button1.Text = "Agregar";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(239, 97);
+            this.button2.Location = new System.Drawing.Point(227, 17);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(76, 21);
+            this.button2.Size = new System.Drawing.Size(76, 28);
             this.button2.TabIndex = 3;
             this.button2.Text = "Modificar";
             this.button2.UseVisualStyleBackColor = true;
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(244, 160);
+            this.button3.Location = new System.Drawing.Point(639, 57);
             this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(72, 19);
+            this.button3.Size = new System.Drawing.Size(88, 26);
             this.button3.TabIndex = 4;
             this.button3.Text = "Deshabilitar";
             this.button3.UseVisualStyleBackColor = true;
@@ -151,7 +152,7 @@
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(244, 368);
+            this.checkBox1.Location = new System.Drawing.Point(244, 270);
             this.checkBox1.Margin = new System.Windows.Forms.Padding(2);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(59, 17);
@@ -198,12 +199,12 @@
             this.Column3,
             this.Column4,
             this.Column5});
-            this.dataGridView2.Location = new System.Drawing.Point(336, 11);
+            this.dataGridView2.Location = new System.Drawing.Point(336, 99);
             this.dataGridView2.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowHeadersWidth = 51;
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(508, 401);
+            this.dataGridView2.Size = new System.Drawing.Size(508, 313);
             this.dataGridView2.TabIndex = 12;
             // 
             // Column1
@@ -241,18 +242,46 @@
             this.Column5.Name = "Column5";
             this.Column5.Width = 125;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Location = new System.Drawing.Point(1, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(865, 42);
+            this.panel1.TabIndex = 14;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.label5.Location = new System.Drawing.Point(264, 9);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(310, 24);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "ADMINISTRAR PROVEEDORES";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // MantenedorProveedor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(864, 432);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.dataGridView2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button3);
             this.Name = "MantenedorProveedor";
             this.Text = "MantenedorProveedor";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -278,5 +307,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label5;
     }
 }
