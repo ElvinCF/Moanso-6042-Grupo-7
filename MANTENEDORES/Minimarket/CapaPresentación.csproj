@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CompraDeProductos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompraDeProductos.Designer.cs">
+      <DependentUpon>CompraDeProductos.cs</DependentUpon>
+    </Compile>
     <Compile Include="MantenedorCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -59,6 +65,12 @@
     <Compile Include="MantenedorProducto.Designer.cs">
       <DependentUpon>MantenedorProducto.cs</DependentUpon>
     </Compile>
+    <Compile Include="MantenedorProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorProveedor.Designer.cs">
+      <DependentUpon>MantenedorProveedor.cs</DependentUpon>
+    </Compile>
     <Compile Include="RegistroProducto.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -67,6 +79,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="CompraDeProductos.resx">
+      <DependentUpon>CompraDeProductos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MantenedorCategoria.resx">
       <DependentUpon>MantenedorCategoria.cs</DependentUpon>
     </EmbeddedResource>

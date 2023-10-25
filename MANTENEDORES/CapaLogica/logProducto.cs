@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CapaLogica
 {
-    public class logCliente
+    internal class logProducto
     {
     }
 }
