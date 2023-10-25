@@ -50,6 +50,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -182,7 +183,7 @@
             // 
             this.button1.DialogResult = System.Windows.Forms.DialogResult.No;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button1.Location = new System.Drawing.Point(326, 309);
+            this.button1.Location = new System.Drawing.Point(326, 313);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(105, 26);
             this.button1.TabIndex = 16;
@@ -207,7 +208,7 @@
             this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Location = new System.Drawing.Point(12, 62);
+            this.groupBox1.Location = new System.Drawing.Point(12, 78);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(569, 229);
             this.groupBox1.TabIndex = 20;
@@ -218,7 +219,7 @@
             // 
             this.button3.DialogResult = System.Windows.Forms.DialogResult.No;
             this.button3.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button3.Location = new System.Drawing.Point(143, 309);
+            this.button3.Location = new System.Drawing.Point(142, 313);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(105, 26);
             this.button3.TabIndex = 22;
@@ -257,11 +258,19 @@
             this.panel1.Size = new System.Drawing.Size(596, 42);
             this.panel1.TabIndex = 23;
             // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Location = new System.Drawing.Point(369, 52);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(200, 20);
+            this.dateTimePicker2.TabIndex = 24;
+            // 
             // RegistroProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(598, 351);
+            this.Controls.Add(this.dateTimePicker2);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button1);
@@ -301,5 +310,6 @@
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
     }
 }
