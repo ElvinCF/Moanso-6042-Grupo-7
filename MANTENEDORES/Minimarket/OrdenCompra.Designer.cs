@@ -1,6 +1,6 @@
 ﻿namespace Minimarket
 {
-    partial class CompraDeProductos
+    partial class OrdenCompra
     {
         /// <summary>
         /// Required designer variable.
