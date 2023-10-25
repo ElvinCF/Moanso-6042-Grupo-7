@@ -65,12 +65,6 @@
     <Compile Include="MantenedorProducto.Designer.cs">
       <DependentUpon>MantenedorProducto.cs</DependentUpon>
     </Compile>
-    <Compile Include="MantenedorProveedor.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MantenedorProveedor.Designer.cs">
-      <DependentUpon>MantenedorProveedor.cs</DependentUpon>
-    </Compile>
     <Compile Include="RegistroProducto.cs">
       <SubType>Form</SubType>
     </Compile>
