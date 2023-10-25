@@ -5,14 +5,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-
 namespace CapaDatos
 {
-    internal class Conexion
+    public class Conexion
     {
         public SqlConnection Conectar()
         {
-            
+            SqlConnection cn = new SqlConnection();
+            cn.ConnectionString = "Data Source=.; Initial Catalog = SistemadeVentas;" +//"User ID=sa; Password = 123";
+            "Integrated Security=true";
+
+            return cn;
         }
     }
 }
