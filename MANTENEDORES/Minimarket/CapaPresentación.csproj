@@ -59,11 +59,23 @@
     <Compile Include="MantenedorCategoria.Designer.cs">
       <DependentUpon>MantenedorCategoria.cs</DependentUpon>
     </Compile>
+    <Compile Include="MantenedorPedidoCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorPedidoCliente.Designer.cs">
+      <DependentUpon>MantenedorPedidoCliente.cs</DependentUpon>
+    </Compile>
     <Compile Include="MantenedorProducto.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MantenedorProducto.Designer.cs">
       <DependentUpon>MantenedorProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenedorProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorProveedor.Designer.cs">
+      <DependentUpon>MantenedorProveedor.cs</DependentUpon>
     </Compile>
     <Compile Include="RegistroProducto.cs">
       <SubType>Form</SubType>
@@ -79,8 +91,14 @@
     <EmbeddedResource Include="MantenedorCategoria.resx">
       <DependentUpon>MantenedorCategoria.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorPedidoCliente.resx">
+      <DependentUpon>MantenedorPedidoCliente.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MantenedorProducto.resx">
       <DependentUpon>MantenedorProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorProveedor.resx">
+      <DependentUpon>MantenedorProveedor.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RegistroProducto.resx">
       <DependentUpon>RegistroProducto.cs</DependentUpon>
