@@ -40,6 +40,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.button8 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,7 +66,7 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.Window;
-            this.button2.Location = new System.Drawing.Point(22, 288);
+            this.button2.Location = new System.Drawing.Point(21, 315);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(156, 62);
             this.button2.TabIndex = 3;
@@ -74,7 +75,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(214, 288);
+            this.button3.Location = new System.Drawing.Point(213, 315);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(143, 62);
             this.button3.TabIndex = 4;
@@ -83,7 +84,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(408, 288);
+            this.button4.Location = new System.Drawing.Point(407, 315);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(143, 62);
             this.button4.TabIndex = 5;
@@ -92,7 +93,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(623, 288);
+            this.button5.Location = new System.Drawing.Point(622, 315);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(143, 62);
             this.button5.TabIndex = 6;
@@ -101,7 +102,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(130, 382);
+            this.button6.Location = new System.Drawing.Point(129, 409);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(143, 62);
             this.button6.TabIndex = 7;
@@ -110,7 +111,7 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(355, 382);
+            this.button7.Location = new System.Drawing.Point(354, 409);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(143, 62);
             this.button7.TabIndex = 8;
@@ -146,12 +147,21 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(568, 382);
+            this.button8.Location = new System.Drawing.Point(567, 409);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(143, 62);
             this.button8.TabIndex = 9;
             this.button8.Text = "CategoriaProducto";
             this.button8.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(18, 276);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(167, 16);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "Escoja la accion a realizar:";
             // 
             // MenuPrincipal
             // 
@@ -159,6 +169,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MintCream;
             this.ClientSize = new System.Drawing.Size(815, 487);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button7);
@@ -193,5 +204,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Label label1;
     }
 }
