@@ -39,6 +39,7 @@
             this.button7 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.button8 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -100,7 +101,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(192, 382);
+            this.button6.Location = new System.Drawing.Point(130, 382);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(143, 62);
             this.button6.TabIndex = 7;
@@ -109,7 +110,7 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(436, 382);
+            this.button7.Location = new System.Drawing.Point(355, 382);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(143, 62);
             this.button7.TabIndex = 8;
@@ -143,12 +144,22 @@
     "ollando un software integral de gestión para Negocios y Servicios La Plaza S.R.L" +
     "\r\n\r\n";
             // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(568, 382);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(143, 62);
+            this.button8.TabIndex = 9;
+            this.button8.Text = "CategoriaProducto";
+            this.button8.UseVisualStyleBackColor = true;
+            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MintCream;
             this.ClientSize = new System.Drawing.Size(815, 487);
+            this.Controls.Add(this.button8);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.label5);
@@ -181,5 +192,6 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button button8;
     }
 }
