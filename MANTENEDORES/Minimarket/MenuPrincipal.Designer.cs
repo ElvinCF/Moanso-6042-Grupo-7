@@ -151,7 +151,7 @@
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(143, 62);
             this.button8.TabIndex = 9;
-            this.button8.Text = "CategoriaProducto";
+            this.button8.Text = "CategoriaProducto (CRUD REALIZADO)";
             this.button8.UseVisualStyleBackColor = true;
             // 
             // label1
