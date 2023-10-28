@@ -41,12 +41,12 @@ namespace CapaDatos
                 SqlDataReader dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
-                    entCategoria Cat = new entCategoria();
-                    Cat.ID_Categoria = Convert.ToInt32(dr["ID_Categoria"]);
-                    Cat.Nombre = dr["Nombre"].ToString();
-                    Cat.Descripcion = dr["Descripcion"].ToString();
-                    Cat.Estado = Convert.ToBoolean(dr["Estado"]);
-                    lista.Add(Cat);
+                    entCategoria c = new entCategoria();
+                    c.ID_Categoria = Convert.ToInt32(dr["ID_Categoria"]);
+                    c.Nombre = dr["Nombre"].ToString();
+                    c.Descripcion = dr["Descripcion"].ToString();
+                    c.Estado = Convert.ToBoolean(dr["Estado"]);
+                    lista.Add(c);
                 }
             }
             catch (Exception e)
