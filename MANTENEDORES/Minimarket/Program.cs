@@ -16,6 +16,7 @@ namespace Minimarket
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            Application.Run(new MenuPrincipal());
             Application.Run(new MantenedorCategoria());
             Application.Run(new MantenedorProducto());
             
