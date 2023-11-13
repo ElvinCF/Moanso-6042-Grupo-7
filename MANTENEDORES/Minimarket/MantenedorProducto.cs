@@ -31,5 +31,11 @@ namespace Minimarket
         {
 
         }
+
+        private void btnNuevoProducto_Click(object sender, EventArgs e)
+        {
+            Form formulario = new RegistroProducto ();
+            formulario.Show();
+        }
     }
 }
