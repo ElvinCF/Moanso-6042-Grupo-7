@@ -47,18 +47,20 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Minimarket.Properties.Resources.WhatsApp_Image_2023_10_25_at_17_35_09;
-            this.pictureBox1.Location = new System.Drawing.Point(9, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(10, 15);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(403, 245);
+            this.pictureBox1.Size = new System.Drawing.Size(453, 306);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(79, 315);
+            this.button1.Location = new System.Drawing.Point(89, 394);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(8, 8);
+            this.button1.Size = new System.Drawing.Size(9, 10);
             this.button1.TabIndex = 2;
             this.button1.Text = "PedidoCliente";
             this.button1.UseVisualStyleBackColor = true;
@@ -66,19 +68,21 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.Window;
-            this.button2.Location = new System.Drawing.Point(21, 315);
+            this.button2.Location = new System.Drawing.Point(24, 394);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(156, 62);
+            this.button2.Size = new System.Drawing.Size(176, 78);
             this.button2.TabIndex = 3;
-            this.button2.Text = "PedidoCliente";
+            this.button2.Text = "Pedido de Cliente";
             this.button2.UseVisualStyleBackColor = false;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(213, 315);
+            this.button3.Location = new System.Drawing.Point(240, 394);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(143, 62);
+            this.button3.Size = new System.Drawing.Size(161, 78);
             this.button3.TabIndex = 4;
             this.button3.Text = "OrdenCompra";
             this.button3.UseVisualStyleBackColor = true;
@@ -86,9 +90,10 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(407, 315);
+            this.button4.Location = new System.Drawing.Point(458, 394);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(143, 62);
+            this.button4.Size = new System.Drawing.Size(161, 78);
             this.button4.TabIndex = 5;
             this.button4.Text = "Administrar producto";
             this.button4.UseVisualStyleBackColor = true;
@@ -96,9 +101,10 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(622, 315);
+            this.button5.Location = new System.Drawing.Point(700, 394);
+            this.button5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(143, 62);
+            this.button5.Size = new System.Drawing.Size(161, 78);
             this.button5.TabIndex = 6;
             this.button5.Text = "Proveedor(CRUD REALIZADO)";
             this.button5.UseVisualStyleBackColor = true;
@@ -106,9 +112,10 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(129, 409);
+            this.button6.Location = new System.Drawing.Point(145, 511);
+            this.button6.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(143, 62);
+            this.button6.Size = new System.Drawing.Size(161, 78);
             this.button6.TabIndex = 7;
             this.button6.Text = "Registro producto";
             this.button6.UseVisualStyleBackColor = true;
@@ -116,9 +123,10 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(354, 409);
+            this.button7.Location = new System.Drawing.Point(398, 511);
+            this.button7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(143, 62);
+            this.button7.Size = new System.Drawing.Size(161, 78);
             this.button7.TabIndex = 8;
             this.button7.Text = "Devoluciones";
             this.button7.UseVisualStyleBackColor = true;
@@ -131,7 +139,7 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label5.Location = new System.Drawing.Point(522, 12);
+            this.label5.Location = new System.Drawing.Point(587, 15);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(170, 29);
@@ -142,10 +150,11 @@
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.textBox1.Location = new System.Drawing.Point(418, 44);
+            this.textBox1.Location = new System.Drawing.Point(470, 55);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(390, 213);
+            this.textBox1.Size = new System.Drawing.Size(438, 265);
             this.textBox1.TabIndex = 3;
             this.textBox1.Text = "Bienvenido a nuestro prototipo de software de Sistema de Ventas\r\n\r\nEstamos desarr" +
     "ollando un software integral de gestión para Negocios y Servicios La Plaza S.R.L" +
@@ -153,9 +162,10 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(567, 409);
+            this.button8.Location = new System.Drawing.Point(638, 511);
+            this.button8.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(143, 62);
+            this.button8.Size = new System.Drawing.Size(161, 78);
             this.button8.TabIndex = 9;
             this.button8.Text = "CategoriaProducto (CRUD REALIZADO)";
             this.button8.UseVisualStyleBackColor = true;
@@ -164,18 +174,18 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 276);
+            this.label1.Location = new System.Drawing.Point(20, 345);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(167, 16);
+            this.label1.Size = new System.Drawing.Size(195, 20);
             this.label1.TabIndex = 10;
             this.label1.Text = "Escoja la accion a realizar:";
             // 
             // MenuPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MintCream;
-            this.ClientSize = new System.Drawing.Size(815, 487);
+            this.ClientSize = new System.Drawing.Size(917, 609);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.textBox1);
@@ -189,6 +199,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "MenuPrincipal";
             this.Text = "MenuPrincipal";
             this.Load += new System.EventHandler(this.MenuPrincipal_Load);
