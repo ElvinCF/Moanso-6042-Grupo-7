@@ -72,6 +72,7 @@
             this.button2.TabIndex = 3;
             this.button2.Text = "PedidoCliente";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
@@ -81,6 +82,7 @@
             this.button3.TabIndex = 4;
             this.button3.Text = "OrdenCompra";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -90,6 +92,7 @@
             this.button4.TabIndex = 5;
             this.button4.Text = "Administrar producto";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -97,8 +100,9 @@
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(143, 62);
             this.button5.TabIndex = 6;
-            this.button5.Text = "Proveedor";
+            this.button5.Text = "Proveedor(CRUD REALIZADO)";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -108,6 +112,7 @@
             this.button6.TabIndex = 7;
             this.button6.Text = "Registro producto";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -117,6 +122,7 @@
             this.button7.TabIndex = 8;
             this.button7.Text = "Devoluciones";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // label5
             // 
@@ -143,7 +149,7 @@
             this.textBox1.TabIndex = 3;
             this.textBox1.Text = "Bienvenido a nuestro prototipo de software de Sistema de Ventas\r\n\r\nEstamos desarr" +
     "ollando un software integral de gestión para Negocios y Servicios La Plaza S.R.L" +
-    "\r\n\r\n";
+    "\r\n\r\nCLASE: 6042";
             // 
             // button8
             // 
@@ -151,8 +157,9 @@
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(143, 62);
             this.button8.TabIndex = 9;
-            this.button8.Text = "CategoriaProducto";
+            this.button8.Text = "CategoriaProducto (CRUD REALIZADO)";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // label1
             // 
@@ -184,6 +191,7 @@
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Name = "MenuPrincipal";
             this.Text = "MenuPrincipal";
+            this.Load += new System.EventHandler(this.MenuPrincipal_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
