@@ -49,7 +49,7 @@ namespace Minimarket
             try
             {
                 entCategoria c = new entCategoria();
-                c.Nombre = txtNombre.Text.Trim();
+                c.NombreCategoria = txtNombre.Text.Trim();
                 c.Descripcion = txtDescripcion.Text.Trim();
                 c.Estado = cbkCategoria.Checked;
                 logCategoria.Instancia.InsertarCategoria(c);
@@ -82,7 +82,7 @@ namespace Minimarket
             {
                 entCategoria c = new entCategoria();
                 c.ID_Categoria = int.Parse(txtCategoria.Text.Trim());
-                c.Nombre = txtNombre.Text.Trim();
+                c.NombreCategoria = txtNombre.Text.Trim();
                 c.Descripcion = txtDescripcion.Text.Trim();
                 c.Estado = cbkCategoria.Checked;
                 logCategoria.Instancia.EditarCategoria(c);

@@ -43,7 +43,7 @@ namespace CapaDatos
                 {
                     entCategoria c = new entCategoria();
                     c.ID_Categoria = Convert.ToInt32(dr["ID_Categoria"]);
-                    c.Nombre = dr["Nombre"].ToString();
+                    c.NombreCategoria = dr["NombreCategoria"].ToString();
                     c.Descripcion = dr["Descripcion"].ToString();
                     c.Estado = Convert.ToBoolean(dr["Estado"]);
                     lista.Add(c);
@@ -73,7 +73,7 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spInsertaCategoria", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@Nombre", Cli.Nombre);
+                cmd.Parameters.AddWithValue("@NombreCategoria", Cli.NombreCategoria);
                 cmd.Parameters.AddWithValue("@Descripcion", Cli.Descripcion);
                 cmd.Parameters.AddWithValue("@Estado", Cli.Estado);
                 cn.Open();
@@ -100,7 +100,7 @@ namespace CapaDatos
                 cmd = new SqlCommand("spEditaCategoria", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@ID_Categoria", Cli.ID_Categoria);
-                cmd.Parameters.AddWithValue("@Nombre", Cli.Nombre);
+                cmd.Parameters.AddWithValue("@NombreCategoria", Cli.NombreCategoria);
                 cmd.Parameters.AddWithValue("@Descripcion", Cli.Descripcion);
                 cmd.Parameters.AddWithValue("@Estado", Cli.Estado);
                 cn.Open();
