@@ -52,8 +52,10 @@ namespace Minimarket
             try
             {
                 entProveedor c = new entProveedor();
+                c.CiudadID = int.Parse(txtCiudad.Text.Trim());
                 c.Nombre = txtNombre.Text.Trim();
-                c.Raz_Social = txtRazon.Text.Trim();
+                c.Ruc = txtRuc.Text.Trim();
+                c.RazSocial = txtRazon.Text.Trim();
                 c.Telefono = txtTelefono.Text.Trim();
                 c.Direccion = txtDireccion.Text.Trim();
                 c.Estado = cbkProveedor.Checked;
@@ -83,9 +85,11 @@ namespace Minimarket
             try
             {
                 entProveedor c = new entProveedor();
-                c.ID_Proveedor = int.Parse(txtProveedor.Text.Trim());
+                c.ProveedorID = int.Parse(txtProveedor.Text.Trim());
+                c.CiudadID = int.Parse(txtCiudad.Text.Trim());
+                c.Ruc = txtRuc.Text.Trim();
                 c.Nombre = txtNombre.Text.Trim();
-                c.Raz_Social = txtRazon.Text.Trim();
+                c.RazSocial = txtRazon.Text.Trim();
                 c.Telefono = txtTelefono.Text.Trim();
                 c.Direccion = txtDireccion.Text.Trim();
                 c.Estado = cbkProveedor.Checked;
@@ -117,7 +121,7 @@ namespace Minimarket
             try
             {
                 entProveedor c = new entProveedor();
-                c.ID_Proveedor = int.Parse(txtProveedor.Text.Trim());
+                c.ProveedorID = int.Parse(txtProveedor.Text.Trim());
                 //cbkCategoria.Checked = false;
                 //c.Estado = cbkCategoria.Checked;
                 logProveedor.Instancia.DeshabilitarProveedor(c);

@@ -41,9 +41,11 @@ namespace CapaDatos
                 while (dr.Read())
                 {
                     entProveedor Cli = new entProveedor();
-                    Cli.ID_Proveedor = Convert.ToInt32(dr["ID_Proveedor"]);
+                    Cli.ProveedorID = Convert.ToInt32(dr["ProveedorID"]);
+                    Cli.CiudadID = Convert.ToInt32(dr["CiudadID"]);
+                    Cli.Ruc = dr["Ruc"].ToString();
                     Cli.Nombre = dr["Nombre"].ToString();
-                    Cli.Raz_Social = dr["Raz_Social"].ToString();
+                    Cli.RazSocial = dr["RazSocial"].ToString();
                     Cli.Telefono = dr["Telefono"].ToString();
                     Cli.Direccion = dr["Direccion"].ToString();
                     Cli.Estado = Convert.ToBoolean(dr["Estado"]);
@@ -71,8 +73,10 @@ namespace CapaDatos
                     SqlConnection cn = Conexion.Instancia.Conectar();
                     cmd = new SqlCommand("spInsertaProveedor", cn);
                     cmd.CommandType = CommandType.StoredProcedure;
+                    cmd.Parameters.AddWithValue("CiudadID", Cli.CiudadID);
+                    cmd.Parameters.AddWithValue("Ruc", Cli.Ruc);
                     cmd.Parameters.AddWithValue("Nombre", Cli.Nombre);
-                    cmd.Parameters.AddWithValue("@Raz_Social", Cli.Raz_Social);
+                    cmd.Parameters.AddWithValue("@RazSocial", Cli.RazSocial);
                     cmd.Parameters.AddWithValue("Telefono", Cli.Telefono);
                     cmd.Parameters.AddWithValue("Direccion", Cli.Direccion);
                     cmd.Parameters.AddWithValue("@Estado", Cli.Estado);
@@ -100,9 +104,11 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spEditaProveedor", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@ID_Proveedor", Cli.ID_Proveedor);
+                cmd.Parameters.AddWithValue("@ProveedorID", Cli.ProveedorID);
+                cmd.Parameters.AddWithValue("@CiudadID", Cli.CiudadID);
+                cmd.Parameters.AddWithValue("@Ruc", Cli.Ruc);
                 cmd.Parameters.AddWithValue("@Nombre", Cli.Nombre);
-                cmd.Parameters.AddWithValue("@Raz_Social", Cli.Raz_Social);
+                cmd.Parameters.AddWithValue("@RazSocial", Cli.RazSocial);
                 cmd.Parameters.AddWithValue("@Telefono", Cli.Telefono);
                 cmd.Parameters.AddWithValue("@Direccion", Cli.Direccion);
                 cmd.Parameters.AddWithValue("@Estado", Cli.Estado);
@@ -129,7 +135,7 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spDeshabilitaProveedor", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@ID_Proveedor", Cli.ID_Proveedor);
+                cmd.Parameters.AddWithValue("@ProveedorID", Cli.ProveedorID);
                 //cmd.Parameters.AddWithValue("@Estado", Cat.Estado);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();

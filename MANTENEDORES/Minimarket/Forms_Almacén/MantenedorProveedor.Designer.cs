@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.groupBoxProveedor = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCiudad = new System.Windows.Forms.TextBox();
+            this.txtRuc = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -66,8 +66,8 @@
             // groupBoxProveedor
             // 
             this.groupBoxProveedor.BackColor = System.Drawing.Color.Transparent;
-            this.groupBoxProveedor.Controls.Add(this.textBox2);
-            this.groupBoxProveedor.Controls.Add(this.textBox1);
+            this.groupBoxProveedor.Controls.Add(this.txtCiudad);
+            this.groupBoxProveedor.Controls.Add(this.txtRuc);
             this.groupBoxProveedor.Controls.Add(this.label10);
             this.groupBoxProveedor.Controls.Add(this.label9);
             this.groupBoxProveedor.Controls.Add(this.label7);
@@ -95,20 +95,20 @@
             this.groupBoxProveedor.TabStop = false;
             this.groupBoxProveedor.Text = "DATOS DEL PROVEEDOR";
             // 
-            // textBox2
+            // txtCiudad
             // 
-            this.textBox2.Location = new System.Drawing.Point(173, 195);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(176, 22);
-            this.textBox2.TabIndex = 19;
+            this.txtCiudad.Location = new System.Drawing.Point(173, 195);
+            this.txtCiudad.Name = "txtCiudad";
+            this.txtCiudad.Size = new System.Drawing.Size(176, 22);
+            this.txtCiudad.TabIndex = 19;
             // 
-            // textBox1
+            // txtRuc
             // 
-            this.textBox1.Location = new System.Drawing.Point(173, 136);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(176, 22);
-            this.textBox1.TabIndex = 18;
+            this.txtRuc.Location = new System.Drawing.Point(173, 136);
+            this.txtRuc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtRuc.Name = "txtRuc";
+            this.txtRuc.Size = new System.Drawing.Size(176, 22);
+            this.txtRuc.TabIndex = 18;
             // 
             // label10
             // 
@@ -447,8 +447,8 @@
         private System.Windows.Forms.Label label13;
         internal System.Windows.Forms.Label label5;
         internal System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCiudad;
+        private System.Windows.Forms.TextBox txtRuc;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnNuevo;
