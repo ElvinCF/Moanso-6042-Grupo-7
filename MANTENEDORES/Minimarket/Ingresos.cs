@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Minimarket
 {
-    public partial class MantenedorPedidoCliente : Form
+    public partial class Entrada_de_dinero : Form
     {
-        public MantenedorPedidoCliente()
+        public Entrada_de_dinero()
         {
             InitializeComponent();
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
         }
     }
 }

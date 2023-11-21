@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Minimarket
 {
-    public partial class Devoluciones : Form
+    public partial class Egresos : Form
     {
-        public Devoluciones()
+        public Egresos()
         {
             InitializeComponent();
         }

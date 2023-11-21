@@ -1,6 +1,6 @@
 ﻿namespace Minimarket
 {
-    partial class MantenedorPedidoCliente
+    partial class Venta
     {
         /// <summary>
         /// Required designer variable.

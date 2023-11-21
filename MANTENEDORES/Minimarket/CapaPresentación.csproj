@@ -47,11 +47,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Devoluciones.cs">
+    <Compile Include="Egresos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Devoluciones.Designer.cs">
-      <DependentUpon>Devoluciones.cs</DependentUpon>
+    <Compile Include="Egresos.Designer.cs">
+      <DependentUpon>Egresos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ingresos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ingresos.Designer.cs">
+      <DependentUpon>Ingresos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MantenedorCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MantenedorCliente.Designer.cs">
+      <DependentUpon>MantenedorCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="MenuPrincipal.cs">
       <SubType>Form</SubType>
@@ -65,17 +77,17 @@
     <Compile Include="OrdenCompra.Designer.cs">
       <DependentUpon>OrdenCompra.cs</DependentUpon>
     </Compile>
-    <Compile Include="MantenedorCategoria.cs">
+    <Compile Include="MantenedorCategoriaProducto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MantenedorCategoria.Designer.cs">
-      <DependentUpon>MantenedorCategoria.cs</DependentUpon>
+    <Compile Include="MantenedorCategoriaProducto.Designer.cs">
+      <DependentUpon>MantenedorCategoriaProducto.cs</DependentUpon>
     </Compile>
-    <Compile Include="MantenedorPedidoCliente.cs">
+    <Compile Include="Venta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MantenedorPedidoCliente.Designer.cs">
-      <DependentUpon>MantenedorPedidoCliente.cs</DependentUpon>
+    <Compile Include="Venta.Designer.cs">
+      <DependentUpon>Venta.cs</DependentUpon>
     </Compile>
     <Compile Include="MantenedorProducto.cs">
       <SubType>Form</SubType>
@@ -97,8 +109,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Devoluciones.resx">
-      <DependentUpon>Devoluciones.cs</DependentUpon>
+    <EmbeddedResource Include="Egresos.resx">
+      <DependentUpon>Egresos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ingresos.resx">
+      <DependentUpon>Ingresos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MantenedorCliente.resx">
+      <DependentUpon>MantenedorCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
@@ -106,11 +124,11 @@
     <EmbeddedResource Include="OrdenCompra.resx">
       <DependentUpon>OrdenCompra.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MantenedorCategoria.resx">
-      <DependentUpon>MantenedorCategoria.cs</DependentUpon>
+    <EmbeddedResource Include="MantenedorCategoriaProducto.resx">
+      <DependentUpon>MantenedorCategoriaProducto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MantenedorPedidoCliente.resx">
-      <DependentUpon>MantenedorPedidoCliente.cs</DependentUpon>
+    <EmbeddedResource Include="Venta.resx">
+      <DependentUpon>Venta.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MantenedorProducto.resx">
       <DependentUpon>MantenedorProducto.cs</DependentUpon>

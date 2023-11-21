@@ -10,22 +10,16 @@ using System.Windows.Forms;
 
 namespace Minimarket
 {
-    public partial class MantenedorProducto : Form
+    public partial class Venta : Form
     {
-        public MantenedorProducto()
+        public Venta()
         {
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void groupBox1_Enter(object sender, EventArgs e)
         {
 
-        }
-
-        private void btnNuevoProducto_Click(object sender, EventArgs e)
-        {
-            Form formulario = new RegistroProducto ();
-            formulario.Show();
         }
     }
 }

@@ -12,9 +12,9 @@ using CapaLogica;
 
 namespace Minimarket
 {
-    public partial class MantenedorCategoria : Form
+    public partial class MantenedorCategoriaProducto : Form
     {
-        public MantenedorCategoria()
+        public MantenedorCategoriaProducto()
         {
             InitializeComponent();
             ListarCategoria();

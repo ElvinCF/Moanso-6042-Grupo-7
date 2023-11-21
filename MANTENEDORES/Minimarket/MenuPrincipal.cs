@@ -24,7 +24,7 @@ namespace Minimarket
 
         private void button8_Click(object sender, EventArgs e)
         {
-            Form formulario = new MantenedorCategoria();
+            Form formulario = new MantenedorCategoriaProducto();
             formulario.Show();
         }
 
@@ -60,7 +60,7 @@ namespace Minimarket
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form formulario = new MantenedorPedidoCliente();
+            Form formulario = new Venta();
             formulario.Show();
         }
     }
