@@ -40,9 +40,9 @@
             this.button8 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -113,7 +113,7 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label5.Location = new System.Drawing.Point(522, 12);
+            this.label5.Location = new System.Drawing.Point(572, 9);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(170, 29);
@@ -127,7 +127,7 @@
             this.textBox1.Location = new System.Drawing.Point(418, 44);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(390, 213);
+            this.textBox1.Size = new System.Drawing.Size(474, 213);
             this.textBox1.TabIndex = 3;
             this.textBox1.Text = "Bienvenido a nuestro prototipo de software de Sistema de Ventas\r\n\r\nEstamos desarr" +
     "ollando un software integral de gestión para Negocios y Servicios La Plaza S.R.L" +
@@ -162,15 +162,6 @@
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click_1);
             // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(469, 409);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(143, 62);
-            this.button7.TabIndex = 12;
-            this.button7.Text = "Capital de la empresa";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
             // button9
             // 
             this.button9.Location = new System.Drawing.Point(284, 409);
@@ -191,15 +182,25 @@
             this.button10.UseVisualStyleBackColor = true;
             this.button10.Click += new System.EventHandler(this.button10_Click);
             // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(491, 409);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(128, 62);
+            this.button7.TabIndex = 15;
+            this.button7.Text = "CapitalEmpresa";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click_1);
+            // 
             // MenuPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MintCream;
             this.ClientSize = new System.Drawing.Size(904, 492);
+            this.Controls.Add(this.button7);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
-            this.Controls.Add(this.button7);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button8);
@@ -235,8 +236,8 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button7;
     }
 }

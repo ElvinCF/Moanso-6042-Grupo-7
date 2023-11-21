@@ -39,7 +39,6 @@
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnDeshabilitar = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
@@ -174,16 +173,6 @@
             this.btnEditar.UseVisualStyleBackColor = true;
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(619, 485);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(8, 7);
-            this.button5.TabIndex = 19;
-            this.button5.Text = "Salir";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
             // btnSalir
             // 
             this.btnSalir.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -307,7 +296,6 @@
             this.Controls.Add(this.groupBoxDatos);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.btnSalir);
-            this.Controls.Add(this.button5);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnDeshabilitar);
             this.Controls.Add(this.dgCategoria);
@@ -336,7 +324,6 @@
         private System.Windows.Forms.Button btnModificar;
         private System.Windows.Forms.Button btnDeshabilitar;
         private System.Windows.Forms.Button btnEditar;
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnNuevo;

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Minimarket.Forms_Caja;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -69,6 +70,14 @@ namespace Minimarket
         private void button9_Click(object sender, EventArgs e)
         {
             Form formulario = new Entrada_de_dinero();
+            formulario.Show();
+        }
+
+      
+
+        private void button7_Click_1(object sender, EventArgs e)
+        {
+            Form formulario = new MantenedorCapital();
             formulario.Show();
         }
     }
