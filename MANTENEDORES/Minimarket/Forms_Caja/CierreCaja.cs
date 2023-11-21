@@ -16,5 +16,10 @@ namespace Minimarket.Forms_Caja
         {
             InitializeComponent();
         }
+
+        private void CierreCaja_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

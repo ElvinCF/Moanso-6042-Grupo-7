@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button2 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -50,10 +50,12 @@
             this.precio = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.domainUpDown1 = new System.Windows.Forms.DomainUpDown();
+            this.button4 = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -61,10 +63,8 @@
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
             this.groupBox2.SuspendLayout();
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
@@ -91,6 +91,15 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "REQUERIMIENTOS";
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(383, 513);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(147, 37);
+            this.button2.TabIndex = 59;
+            this.button2.Text = "ENVIAR";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -108,15 +117,6 @@
             this.label10.Size = new System.Drawing.Size(40, 13);
             this.label10.TabIndex = 0;
             this.label10.Text = "ITEMS";
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(383, 513);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(147, 37);
-            this.button2.TabIndex = 59;
-            this.button2.Text = "ENVIAR";
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // groupBox4
             // 
@@ -267,6 +267,17 @@
             this.domainUpDown1.TabIndex = 55;
             this.domainUpDown1.Text = "0";
             // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.button4.Location = new System.Drawing.Point(764, 18);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(117, 29);
+            this.button4.TabIndex = 54;
+            this.button4.Text = "Agregar todo";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
             // btnAgregar
             // 
             this.btnAgregar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
@@ -304,6 +315,16 @@
             this.label3.Size = new System.Drawing.Size(84, 13);
             this.label3.TabIndex = 37;
             this.label3.Text = "ID del Producto:";
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(226, 512);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(137, 37);
+            this.button3.TabIndex = 45;
+            this.button3.Text = "MODIFICAR";
+            this.button3.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
@@ -365,17 +386,6 @@
             this.textBox2.Size = new System.Drawing.Size(60, 20);
             this.textBox2.TabIndex = 51;
             // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.button4.Location = new System.Drawing.Point(764, 18);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(117, 29);
-            this.button4.TabIndex = 54;
-            this.button4.Text = "Agregar todo";
-            this.button4.UseVisualStyleBackColor = false;
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -402,16 +412,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(936, 41);
             this.panel1.TabIndex = 58;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(226, 512);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(137, 37);
-            this.button3.TabIndex = 45;
-            this.button3.Text = "MODIFICAR";
-            this.button3.UseVisualStyleBackColor = true;
             // 
             // Mantenedor_Requerimientos
             // 

@@ -46,21 +46,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Minimarket.Properties.Resources.WhatsApp_Image_2023_10_25_at_17_35_09;
-            this.pictureBox1.Location = new System.Drawing.Point(7, 10);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(302, 199);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(59, 256);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(6, 6);
             this.button1.TabIndex = 2;
@@ -71,7 +60,7 @@
             // 
             this.button2.BackColor = System.Drawing.SystemColors.Window;
             this.button2.Location = new System.Drawing.Point(16, 256);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(117, 50);
             this.button2.TabIndex = 3;
@@ -82,7 +71,7 @@
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(153, 256);
-            this.button3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(107, 50);
             this.button3.TabIndex = 4;
@@ -93,7 +82,7 @@
             // button4
             // 
             this.button4.Location = new System.Drawing.Point(286, 256);
-            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(107, 50);
             this.button4.TabIndex = 5;
@@ -104,7 +93,7 @@
             // button5
             // 
             this.button5.Location = new System.Drawing.Point(419, 256);
-            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(107, 50);
             this.button5.TabIndex = 6;
@@ -130,7 +119,7 @@
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.MenuBar;
             this.textBox1.Location = new System.Drawing.Point(314, 36);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(356, 174);
@@ -142,7 +131,7 @@
             // button8
             // 
             this.button8.Location = new System.Drawing.Point(499, 332);
-            this.button8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button8.Margin = new System.Windows.Forms.Padding(2);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(107, 50);
             this.button8.TabIndex = 9;
@@ -163,7 +152,7 @@
             // button6
             // 
             this.button6.Location = new System.Drawing.Point(552, 256);
-            this.button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(107, 50);
             this.button6.TabIndex = 11;
@@ -174,7 +163,7 @@
             // button9
             // 
             this.button9.Location = new System.Drawing.Point(213, 332);
-            this.button9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button9.Margin = new System.Windows.Forms.Padding(2);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(107, 50);
             this.button9.TabIndex = 13;
@@ -185,7 +174,7 @@
             // button10
             // 
             this.button10.Location = new System.Drawing.Point(70, 332);
-            this.button10.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button10.Margin = new System.Windows.Forms.Padding(2);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(107, 50);
             this.button10.TabIndex = 14;
@@ -196,7 +185,7 @@
             // button7
             // 
             this.button7.Location = new System.Drawing.Point(368, 332);
-            this.button7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button7.Margin = new System.Windows.Forms.Padding(2);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(96, 50);
             this.button7.TabIndex = 15;
@@ -208,6 +197,7 @@
             // 
             this.pictureBox1.Image = global::Minimarket.Properties.Resources.WhatsApp_Image_2023_10_25_at_17_35_09;
             this.pictureBox1.Location = new System.Drawing.Point(9, 12);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(403, 245);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -235,7 +225,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MenuPrincipal";
             this.Text = "MenuPrincipal";
             this.Load += new System.EventHandler(this.MenuPrincipal_Load);

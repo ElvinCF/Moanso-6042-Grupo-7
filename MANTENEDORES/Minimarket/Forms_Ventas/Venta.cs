@@ -23,9 +23,20 @@ namespace Minimarket
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void button9_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button10_Click(object sender, EventArgs e)
         {
             Form formulario = new CierreCaja();
+            formulario.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Form formulario = new MantenedorCliente();
             formulario.Show();
         }
     }
