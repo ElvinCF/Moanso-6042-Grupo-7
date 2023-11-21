@@ -36,7 +36,6 @@
             this.button5 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.button8 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
@@ -48,10 +47,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(59, 221);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Location = new System.Drawing.Point(79, 272);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(6, 6);
+            this.button1.Size = new System.Drawing.Size(8, 7);
             this.button1.TabIndex = 2;
             this.button1.Text = "PedidoCliente";
             this.button1.UseVisualStyleBackColor = true;
@@ -59,10 +58,10 @@
             // button2
             // 
             this.button2.BackColor = System.Drawing.SystemColors.Window;
-            this.button2.Location = new System.Drawing.Point(558, 269);
-            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Location = new System.Drawing.Point(744, 331);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(117, 50);
+            this.button2.Size = new System.Drawing.Size(156, 62);
             this.button2.TabIndex = 3;
             this.button2.Text = "Pedido de Cliente";
             this.button2.UseVisualStyleBackColor = false;
@@ -70,10 +69,10 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(18, 269);
-            this.button3.Margin = new System.Windows.Forms.Padding(2);
+            this.button3.Location = new System.Drawing.Point(24, 331);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(107, 50);
+            this.button3.Size = new System.Drawing.Size(143, 62);
             this.button3.TabIndex = 4;
             this.button3.Text = "OrdenCompra";
             this.button3.UseVisualStyleBackColor = true;
@@ -81,10 +80,10 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(18, 338);
-            this.button4.Margin = new System.Windows.Forms.Padding(2);
+            this.button4.Location = new System.Drawing.Point(118, 416);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(107, 50);
+            this.button4.Size = new System.Drawing.Size(143, 62);
             this.button4.TabIndex = 5;
             this.button4.Text = "Administrar producto";
             this.button4.UseVisualStyleBackColor = true;
@@ -92,12 +91,12 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(147, 269);
-            this.button5.Margin = new System.Windows.Forms.Padding(2);
+            this.button5.Location = new System.Drawing.Point(196, 331);
+            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(107, 50);
+            this.button5.Size = new System.Drawing.Size(143, 62);
             this.button5.TabIndex = 6;
-            this.button5.Text = "Proveedor(CRUD REALIZADO)";
+            this.button5.Text = "Administrar Proveedor";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
@@ -108,9 +107,10 @@
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label5.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label5.Location = new System.Drawing.Point(465, 9);
+            this.label5.Location = new System.Drawing.Point(620, 11);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(135, 24);
+            this.label5.Size = new System.Drawing.Size(170, 29);
             this.label5.TabIndex = 2;
             this.label5.Text = "BIENVENIDO";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
@@ -118,43 +118,31 @@
             // textBox1
             // 
             this.textBox1.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.textBox1.Location = new System.Drawing.Point(403, 43);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox1.Location = new System.Drawing.Point(537, 53);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(272, 184);
+            this.textBox1.Size = new System.Drawing.Size(361, 226);
             this.textBox1.TabIndex = 3;
             this.textBox1.Text = "Bienvenido a nuestro prototipo de software de Sistema de Ventas\r\n\r\nEstamos desarr" +
     "ollando un software integral de gestión para Negocios y Servicios La Plaza S.R.L" +
     "\r\n\r\nCLASE: 6042";
             // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(147, 338);
-            this.button8.Margin = new System.Windows.Forms.Padding(2);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(107, 50);
-            this.button8.TabIndex = 9;
-            this.button8.Text = "Nueva categoria de Producto (CRUD REALIZADO)";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(15, 241);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(20, 297);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(133, 13);
+            this.label1.Size = new System.Drawing.Size(167, 16);
             this.label1.TabIndex = 10;
             this.label1.Text = "Escoja la accion a realizar:";
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(558, 338);
-            this.button6.Margin = new System.Windows.Forms.Padding(2);
+            this.button6.Location = new System.Drawing.Point(744, 416);
+            this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(117, 50);
+            this.button6.Size = new System.Drawing.Size(156, 62);
             this.button6.TabIndex = 11;
             this.button6.Text = "Clientes";
             this.button6.UseVisualStyleBackColor = true;
@@ -162,10 +150,10 @@
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(291, 338);
-            this.button9.Margin = new System.Windows.Forms.Padding(2);
+            this.button9.Location = new System.Drawing.Point(369, 416);
+            this.button9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(107, 50);
+            this.button9.Size = new System.Drawing.Size(143, 62);
             this.button9.TabIndex = 13;
             this.button9.Text = "Ingresos";
             this.button9.UseVisualStyleBackColor = true;
@@ -173,10 +161,10 @@
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(414, 338);
-            this.button10.Margin = new System.Windows.Forms.Padding(2);
+            this.button10.Location = new System.Drawing.Point(537, 416);
+            this.button10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(107, 50);
+            this.button10.Size = new System.Drawing.Size(143, 62);
             this.button10.TabIndex = 14;
             this.button10.Text = "Egresos";
             this.button10.UseVisualStyleBackColor = true;
@@ -184,10 +172,10 @@
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(353, 269);
-            this.button7.Margin = new System.Windows.Forms.Padding(2);
+            this.button7.Location = new System.Drawing.Point(452, 331);
+            this.button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(96, 50);
+            this.button7.Size = new System.Drawing.Size(128, 62);
             this.button7.TabIndex = 15;
             this.button7.Text = "CapitalEmpresa";
             this.button7.UseVisualStyleBackColor = true;
@@ -196,26 +184,25 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Minimarket.Properties.Resources.WhatsApp_Image_2023_10_25_at_17_35_09;
-            this.pictureBox1.Location = new System.Drawing.Point(9, 12);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(12, 15);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(375, 215);
+            this.pictureBox1.Size = new System.Drawing.Size(500, 265);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // MenuPrincipal
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MintCream;
-            this.ClientSize = new System.Drawing.Size(693, 408);
+            this.ClientSize = new System.Drawing.Size(924, 502);
             this.Controls.Add(this.button7);
             this.Controls.Add(this.button10);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button8);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button5);
@@ -225,7 +212,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "MenuPrincipal";
             this.Text = "MenuPrincipal";
             this.Load += new System.EventHandler(this.MenuPrincipal_Load);
@@ -246,7 +233,6 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button9;

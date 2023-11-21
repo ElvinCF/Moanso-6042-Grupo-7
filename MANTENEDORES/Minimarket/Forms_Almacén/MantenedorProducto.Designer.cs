@@ -60,6 +60,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.Pnl_titulo = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.Pnl_titulo.SuspendLayout();
@@ -76,10 +77,10 @@
             this.precio,
             this.cantidad});
             this.dataGridView1.Location = new System.Drawing.Point(432, 161);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(927, 390);
+            this.dataGridView1.Size = new System.Drawing.Size(804, 390);
             this.dataGridView1.TabIndex = 2;
             // 
             // cod
@@ -128,7 +129,7 @@
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Location = new System.Drawing.Point(157, 78);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(195, 24);
             this.comboBox1.TabIndex = 3;
@@ -147,7 +148,7 @@
             // btnNuevo
             // 
             this.btnNuevo.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevo.Location = new System.Drawing.Point(560, 99);
+            this.btnNuevo.Location = new System.Drawing.Point(479, 105);
             this.btnNuevo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Size = new System.Drawing.Size(148, 33);
@@ -158,7 +159,7 @@
             // button4
             // 
             this.button4.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(798, 99);
+            this.button4.Location = new System.Drawing.Point(671, 105);
             this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(148, 33);
@@ -169,7 +170,7 @@
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(1044, 99);
+            this.button5.Location = new System.Drawing.Point(862, 105);
             this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(148, 33);
@@ -241,7 +242,7 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(25, 360);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(379, 22);
             this.dateTimePicker1.TabIndex = 576;
@@ -249,7 +250,7 @@
             // domainUpDown1
             // 
             this.domainUpDown1.Location = new System.Drawing.Point(157, 257);
-            this.domainUpDown1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.domainUpDown1.Margin = new System.Windows.Forms.Padding(4);
             this.domainUpDown1.Name = "domainUpDown1";
             this.domainUpDown1.Size = new System.Drawing.Size(120, 22);
             this.domainUpDown1.TabIndex = 575;
@@ -360,7 +361,7 @@
             this.label8.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Transparent;
             this.label8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label8.Location = new System.Drawing.Point(524, 11);
+            this.label8.Location = new System.Drawing.Point(448, 9);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(344, 32);
@@ -375,7 +376,7 @@
             this.label5.Location = new System.Drawing.Point(0, 0);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(1375, 1);
+            this.label5.Size = new System.Drawing.Size(1251, 1);
             this.label5.TabIndex = 262;
             this.label5.Text = "label5";
             // 
@@ -386,7 +387,7 @@
             this.label13.Location = new System.Drawing.Point(0, 59);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(1375, 4);
+            this.label13.Size = new System.Drawing.Size(1251, 4);
             this.label13.TabIndex = 557;
             // 
             // Pnl_titulo
@@ -397,23 +398,36 @@
             this.Pnl_titulo.Controls.Add(this.label5);
             this.Pnl_titulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.Pnl_titulo.Location = new System.Drawing.Point(0, 0);
-            this.Pnl_titulo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Pnl_titulo.Margin = new System.Windows.Forms.Padding(4);
             this.Pnl_titulo.Name = "Pnl_titulo";
-            this.Pnl_titulo.Size = new System.Drawing.Size(1375, 63);
+            this.Pnl_titulo.Size = new System.Drawing.Size(1251, 63);
             this.Pnl_titulo.TabIndex = 268;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft JhengHei", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(1053, 79);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(152, 69);
+            this.button1.TabIndex = 566;
+            this.button1.Text = "Administrar Categoria";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // MantenedorProducto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1375, 564);
+            this.ClientSize = new System.Drawing.Size(1251, 564);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.Pnl_titulo);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MantenedorProducto";
             this.Text = "PRODUCTOS";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
@@ -458,6 +472,7 @@
         internal System.Windows.Forms.Panel Pnl_titulo;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button button1;
     }
 }
 

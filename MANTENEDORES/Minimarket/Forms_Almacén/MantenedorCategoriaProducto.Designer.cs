@@ -152,7 +152,7 @@
             // btnDeshabilitar
             // 
             this.btnDeshabilitar.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDeshabilitar.Location = new System.Drawing.Point(787, 136);
+            this.btnDeshabilitar.Location = new System.Drawing.Point(786, 139);
             this.btnDeshabilitar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDeshabilitar.Name = "btnDeshabilitar";
             this.btnDeshabilitar.Size = new System.Drawing.Size(136, 29);
@@ -176,10 +176,10 @@
             // btnSalir
             // 
             this.btnSalir.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalir.Location = new System.Drawing.Point(966, 133);
+            this.btnSalir.Location = new System.Drawing.Point(968, 139);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(104, 32);
+            this.btnSalir.Size = new System.Drawing.Size(104, 29);
             this.btnSalir.TabIndex = 20;
             this.btnSalir.Text = "Salir";
             this.btnSalir.UseVisualStyleBackColor = true;
@@ -188,7 +188,7 @@
             // btnCancelar
             // 
             this.btnCancelar.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCancelar.Location = new System.Drawing.Point(321, 491);
+            this.btnCancelar.Location = new System.Drawing.Point(308, 490);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancelar.Name = "btnCancelar";
             this.btnCancelar.Size = new System.Drawing.Size(107, 34);
