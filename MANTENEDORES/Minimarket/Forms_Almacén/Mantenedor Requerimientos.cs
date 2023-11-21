@@ -8,19 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Minimarket
+namespace Minimarket.Forms_Almacén
 {
-    public partial class OrdenCompra : Form
+    public partial class Mantenedor_Requerimientos : Form
     {
-        public OrdenCompra()
+        public Mantenedor_Requerimientos()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Form formulario = new MantenedorProveedor();
-            formulario.Show();
         }
     }
 }

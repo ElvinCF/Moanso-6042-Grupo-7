@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms_Almacén\Mantenedor Requerimientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_Almacén\Mantenedor Requerimientos.Designer.cs">
+      <DependentUpon>Mantenedor Requerimientos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms_Caja\Egresos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -109,6 +115,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms_Almacén\Mantenedor Requerimientos.resx">
+      <DependentUpon>Mantenedor Requerimientos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms_Caja\Egresos.resx">
       <DependentUpon>Egresos.cs</DependentUpon>
     </EmbeddedResource>
