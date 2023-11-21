@@ -47,22 +47,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Caja\Egresos.cs">
+    <Compile Include="Forms_Caja\Egresos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Caja\Egresos.Designer.cs">
+    <Compile Include="Forms_Caja\Egresos.Designer.cs">
       <DependentUpon>Egresos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Caja\Ingresos.cs">
+    <Compile Include="Forms_Caja\Ingresos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Caja\Ingresos.Designer.cs">
+    <Compile Include="Forms_Caja\Ingresos.Designer.cs">
       <DependentUpon>Ingresos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ventas\MantenedorCliente.cs">
+    <Compile Include="Forms_Ventas\MantenedorCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ventas\MantenedorCliente.Designer.cs">
+    <Compile Include="Forms_Ventas\MantenedorCliente.Designer.cs">
       <DependentUpon>MantenedorCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="MenuPrincipal.cs">
@@ -71,73 +71,64 @@
     <Compile Include="MenuPrincipal.Designer.cs">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Almacén\OrdenCompra.cs">
+    <Compile Include="Forms_Almacén\OrdenCompra.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Almacén\OrdenCompra.Designer.cs">
+    <Compile Include="Forms_Almacén\OrdenCompra.Designer.cs">
       <DependentUpon>OrdenCompra.cs</DependentUpon>
     </Compile>
-    <Compile Include="Almacén\MantenedorCategoriaProducto.cs">
+    <Compile Include="Forms_Almacén\MantenedorCategoriaProducto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Almacén\MantenedorCategoriaProducto.Designer.cs">
+    <Compile Include="Forms_Almacén\MantenedorCategoriaProducto.Designer.cs">
       <DependentUpon>MantenedorCategoriaProducto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ventas\Venta.cs">
+    <Compile Include="Forms_Ventas\Venta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ventas\Venta.Designer.cs">
+    <Compile Include="Forms_Ventas\Venta.Designer.cs">
       <DependentUpon>Venta.cs</DependentUpon>
     </Compile>
-    <Compile Include="Almacén\MantenedorProducto.cs">
+    <Compile Include="Forms_Almacén\MantenedorProducto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Almacén\MantenedorProducto.Designer.cs">
+    <Compile Include="Forms_Almacén\MantenedorProducto.Designer.cs">
       <DependentUpon>MantenedorProducto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Almacén\MantenedorProveedor.cs">
+    <Compile Include="Forms_Almacén\MantenedorProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Almacén\MantenedorProveedor.Designer.cs">
+    <Compile Include="Forms_Almacén\MantenedorProveedor.Designer.cs">
       <DependentUpon>MantenedorProveedor.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Almacén\RegistroProducto.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Almacén\RegistroProducto.Designer.cs">
-      <DependentUpon>RegistroProducto.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Caja\Egresos.resx">
+    <EmbeddedResource Include="Forms_Caja\Egresos.resx">
       <DependentUpon>Egresos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Caja\Ingresos.resx">
+    <EmbeddedResource Include="Forms_Caja\Ingresos.resx">
       <DependentUpon>Ingresos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ventas\MantenedorCliente.resx">
+    <EmbeddedResource Include="Forms_Ventas\MantenedorCliente.resx">
       <DependentUpon>MantenedorCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Almacén\OrdenCompra.resx">
+    <EmbeddedResource Include="Forms_Almacén\OrdenCompra.resx">
       <DependentUpon>OrdenCompra.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Almacén\MantenedorCategoriaProducto.resx">
+    <EmbeddedResource Include="Forms_Almacén\MantenedorCategoriaProducto.resx">
       <DependentUpon>MantenedorCategoriaProducto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ventas\Venta.resx">
+    <EmbeddedResource Include="Forms_Ventas\Venta.resx">
       <DependentUpon>Venta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Almacén\MantenedorProducto.resx">
+    <EmbeddedResource Include="Forms_Almacén\MantenedorProducto.resx">
       <DependentUpon>MantenedorProducto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Almacén\MantenedorProveedor.resx">
+    <EmbeddedResource Include="Forms_Almacén\MantenedorProveedor.resx">
       <DependentUpon>MantenedorProveedor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Almacén\RegistroProducto.resx">
-      <DependentUpon>RegistroProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
