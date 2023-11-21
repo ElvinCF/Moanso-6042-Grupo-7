@@ -47,22 +47,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Egresos.cs">
+    <Compile Include="Caja\Egresos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Egresos.Designer.cs">
+    <Compile Include="Caja\Egresos.Designer.cs">
       <DependentUpon>Egresos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Ingresos.cs">
+    <Compile Include="Caja\Ingresos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Ingresos.Designer.cs">
+    <Compile Include="Caja\Ingresos.Designer.cs">
       <DependentUpon>Ingresos.cs</DependentUpon>
     </Compile>
-    <Compile Include="MantenedorCliente.cs">
+    <Compile Include="Ventas\MantenedorCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MantenedorCliente.Designer.cs">
+    <Compile Include="Ventas\MantenedorCliente.Designer.cs">
       <DependentUpon>MantenedorCliente.cs</DependentUpon>
     </Compile>
     <Compile Include="MenuPrincipal.cs">
@@ -71,72 +71,72 @@
     <Compile Include="MenuPrincipal.Designer.cs">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="OrdenCompra.cs">
+    <Compile Include="Almacén\OrdenCompra.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="OrdenCompra.Designer.cs">
+    <Compile Include="Almacén\OrdenCompra.Designer.cs">
       <DependentUpon>OrdenCompra.cs</DependentUpon>
     </Compile>
-    <Compile Include="MantenedorCategoriaProducto.cs">
+    <Compile Include="Almacén\MantenedorCategoriaProducto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MantenedorCategoriaProducto.Designer.cs">
+    <Compile Include="Almacén\MantenedorCategoriaProducto.Designer.cs">
       <DependentUpon>MantenedorCategoriaProducto.cs</DependentUpon>
     </Compile>
-    <Compile Include="Venta.cs">
+    <Compile Include="Ventas\Venta.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Venta.Designer.cs">
+    <Compile Include="Ventas\Venta.Designer.cs">
       <DependentUpon>Venta.cs</DependentUpon>
     </Compile>
-    <Compile Include="MantenedorProducto.cs">
+    <Compile Include="Almacén\MantenedorProducto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MantenedorProducto.Designer.cs">
+    <Compile Include="Almacén\MantenedorProducto.Designer.cs">
       <DependentUpon>MantenedorProducto.cs</DependentUpon>
     </Compile>
-    <Compile Include="MantenedorProveedor.cs">
+    <Compile Include="Almacén\MantenedorProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MantenedorProveedor.Designer.cs">
+    <Compile Include="Almacén\MantenedorProveedor.Designer.cs">
       <DependentUpon>MantenedorProveedor.cs</DependentUpon>
     </Compile>
-    <Compile Include="RegistroProducto.cs">
+    <Compile Include="Almacén\RegistroProducto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegistroProducto.Designer.cs">
+    <Compile Include="Almacén\RegistroProducto.Designer.cs">
       <DependentUpon>RegistroProducto.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Egresos.resx">
+    <EmbeddedResource Include="Caja\Egresos.resx">
       <DependentUpon>Egresos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Ingresos.resx">
+    <EmbeddedResource Include="Caja\Ingresos.resx">
       <DependentUpon>Ingresos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MantenedorCliente.resx">
+    <EmbeddedResource Include="Ventas\MantenedorCliente.resx">
       <DependentUpon>MantenedorCliente.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="OrdenCompra.resx">
+    <EmbeddedResource Include="Almacén\OrdenCompra.resx">
       <DependentUpon>OrdenCompra.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MantenedorCategoriaProducto.resx">
+    <EmbeddedResource Include="Almacén\MantenedorCategoriaProducto.resx">
       <DependentUpon>MantenedorCategoriaProducto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Venta.resx">
+    <EmbeddedResource Include="Ventas\Venta.resx">
       <DependentUpon>Venta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MantenedorProducto.resx">
+    <EmbeddedResource Include="Almacén\MantenedorProducto.resx">
       <DependentUpon>MantenedorProducto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MantenedorProveedor.resx">
+    <EmbeddedResource Include="Almacén\MantenedorProveedor.resx">
       <DependentUpon>MantenedorProveedor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="RegistroProducto.resx">
+    <EmbeddedResource Include="Almacén\RegistroProducto.resx">
       <DependentUpon>RegistroProducto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -175,5 +175,6 @@
   <ItemGroup>
     <None Include="Resources\WhatsApp Image 2023-10-25 at 17.35.09.jpeg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
