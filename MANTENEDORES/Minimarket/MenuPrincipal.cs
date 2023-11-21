@@ -28,17 +28,7 @@ namespace Minimarket
             formulario.Show();
         }
 
-        private void button7_Click(object sender, EventArgs e)
-        {
-            Form formulario = new Devoluciones();
-            formulario.Show();
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            Form formulario = new RegistroProducto();
-            formulario.Show();
-        }
+        
 
         private void button5_Click(object sender, EventArgs e)
         {
@@ -61,6 +51,24 @@ namespace Minimarket
         private void button2_Click(object sender, EventArgs e)
         {
             Form formulario = new Venta();
+            formulario.Show();
+        }
+
+        private void button6_Click_1(object sender, EventArgs e)
+        {
+            Form formulario = new MantenedorCliente();
+            formulario.Show();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            Form formulario = new Egresos();
+            formulario.Show();
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            Form formulario = new Entrada_de_dinero();
             formulario.Show();
         }
     }
