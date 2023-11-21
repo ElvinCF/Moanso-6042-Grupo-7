@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -43,18 +42,9 @@
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::Minimarket.Properties.Resources.WhatsApp_Image_2023_10_25_at_17_35_09;
-            this.pictureBox1.Location = new System.Drawing.Point(9, 12);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(403, 245);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // button1
             // 
@@ -164,7 +154,7 @@
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(284, 409);
+            this.button9.Location = new System.Drawing.Point(319, 409);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(143, 62);
             this.button9.TabIndex = 13;
@@ -174,7 +164,7 @@
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(93, 409);
+            this.button10.Location = new System.Drawing.Point(149, 409);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(143, 62);
             this.button10.TabIndex = 14;
@@ -191,6 +181,16 @@
             this.button7.Text = "CapitalEmpresa";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click_1);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Minimarket.Properties.Resources.WhatsApp_Image_2023_10_25_at_17_35_09;
+            this.pictureBox1.Location = new System.Drawing.Point(9, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(403, 245);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // MenuPrincipal
             // 

@@ -51,7 +51,7 @@ namespace Minimarket
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Form formulario = new Venta();
+            Form formulario = new Entrada_de_dinero();
             formulario.Show();
         }
 
@@ -63,7 +63,7 @@ namespace Minimarket
 
         private void button10_Click(object sender, EventArgs e)
         {
-            Form formulario = new Egresos();
+            Form formulario = new Entrada_de_dinero();
             formulario.Show();
         }
 

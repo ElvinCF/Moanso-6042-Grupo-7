@@ -47,17 +47,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms_Caja\CierreCaja.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms_Caja\CierreCaja.Designer.cs">
+      <DependentUpon>CierreCaja.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms_Caja\Egresos.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms_Caja\Egresos.Designer.cs">
       <DependentUpon>Egresos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms_Caja\Ingresos.cs">
+    <Compile Include="Forms_Caja\InicioCaja.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms_Caja\Ingresos.Designer.cs">
-      <DependentUpon>Ingresos.cs</DependentUpon>
+    <Compile Include="Forms_Caja\InicioCaja.Designer.cs">
+      <DependentUpon>InicioCaja.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms_Caja\MantenedorCapital.cs">
       <SubType>Form</SubType>
@@ -109,11 +115,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms_Caja\CierreCaja.resx">
+      <DependentUpon>CierreCaja.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms_Caja\Egresos.resx">
       <DependentUpon>Egresos.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms_Caja\Ingresos.resx">
-      <DependentUpon>Ingresos.cs</DependentUpon>
+    <EmbeddedResource Include="Forms_Caja\InicioCaja.resx">
+      <DependentUpon>InicioCaja.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms_Caja\MantenedorCapital.resx">
       <DependentUpon>MantenedorCapital.cs</DependentUpon>

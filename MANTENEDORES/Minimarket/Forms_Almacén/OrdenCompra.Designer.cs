@@ -62,8 +62,8 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(326, 514);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button2.Location = new System.Drawing.Point(369, 514);
+            this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(127, 33);
             this.button2.TabIndex = 4;
@@ -106,7 +106,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(913, 315);
+            this.dataGridView1.Size = new System.Drawing.Size(928, 332);
             this.dataGridView1.TabIndex = 7;
             // 
             // Column1
@@ -285,8 +285,8 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(507, 514);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Location = new System.Drawing.Point(552, 514);
+            this.button3.Margin = new System.Windows.Forms.Padding(4);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(123, 33);
             this.button3.TabIndex = 3;
@@ -309,9 +309,9 @@
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.textBox3);
             this.groupBox1.Location = new System.Drawing.Point(16, 52);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox1.Size = new System.Drawing.Size(911, 118);
             this.groupBox1.TabIndex = 20;
             this.groupBox1.TabStop = false;
@@ -328,7 +328,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button3);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "OrdenCompra";
             this.Text = "CompraDeProductos";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
