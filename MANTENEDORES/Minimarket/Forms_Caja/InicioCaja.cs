@@ -7,26 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Minimarket.Forms_Caja;
 
 namespace Minimarket
 {
-    public partial class Venta : Form
+    public partial class Entrada_de_dinero : Form
     {
-        public Venta()
+        public Entrada_de_dinero()
         {
             InitializeComponent();
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-            Form formulario = new CierreCaja();
+            Form formulario = new Venta();
             formulario.Show();
+            
         }
     }
 }

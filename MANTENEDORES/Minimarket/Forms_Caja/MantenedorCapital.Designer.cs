@@ -66,10 +66,10 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(36, 193);
+            this.textBox1.Location = new System.Drawing.Point(36, 184);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(220, 47);
+            this.textBox1.Size = new System.Drawing.Size(217, 58);
             this.textBox1.TabIndex = 431;
             // 
             // label2
@@ -99,7 +99,7 @@
             // 
             this.button1.BackColor = System.Drawing.Color.Coral;
             this.button1.Font = new System.Drawing.Font("Modern No. 20", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(397, 304);
+            this.button1.Location = new System.Drawing.Point(401, 304);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(112, 46);
             this.button1.TabIndex = 434;

@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -43,6 +42,7 @@
             this.button9 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -203,6 +203,16 @@
             this.button7.Text = "CapitalEmpresa";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click_1);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Minimarket.Properties.Resources.WhatsApp_Image_2023_10_25_at_17_35_09;
+            this.pictureBox1.Location = new System.Drawing.Point(9, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(403, 245);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // MenuPrincipal
             // 

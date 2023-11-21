@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Minimarket
+namespace Minimarket.Forms_Caja
 {
-    public partial class Entrada_de_dinero : Form
+    public partial class CierreCaja : Form
     {
-        public Entrada_de_dinero()
+        public CierreCaja()
         {
             InitializeComponent();
         }
