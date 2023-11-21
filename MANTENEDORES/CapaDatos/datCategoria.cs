@@ -42,7 +42,7 @@ namespace CapaDatos
                 while (dr.Read())
                 {
                     entCategoria c = new entCategoria();
-                    c.ID_Categoria = Convert.ToInt32(dr["ID_Categoria"]);
+                    c.CategoriaID = Convert.ToInt32(dr["CategoriaID"]);
                     c.NombreCategoria = dr["NombreCategoria"].ToString();
                     c.Descripcion = dr["Descripcion"].ToString();
                     c.Estado = Convert.ToBoolean(dr["Estado"]);
@@ -99,7 +99,7 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spEditaCategoria", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@ID_Categoria", Cli.ID_Categoria);
+                cmd.Parameters.AddWithValue("@CategoriaID", Cli.CategoriaID);
                 cmd.Parameters.AddWithValue("@NombreCategoria", Cli.NombreCategoria);
                 cmd.Parameters.AddWithValue("@Descripcion", Cli.Descripcion);
                 cmd.Parameters.AddWithValue("@Estado", Cli.Estado);
@@ -126,7 +126,7 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spDeshabilitaCategoria", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@ID_Categoria", Cli.ID_Categoria);
+                cmd.Parameters.AddWithValue("@CategoriaID", Cli.CategoriaID);
                 //cmd.Parameters.AddWithValue("@Estado", Cat.Estado);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();

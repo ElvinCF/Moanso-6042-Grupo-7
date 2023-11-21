@@ -81,7 +81,7 @@ namespace Minimarket
             try
             {
                 entCategoria c = new entCategoria();
-                c.ID_Categoria = int.Parse(txtCategoria.Text.Trim());
+                c.CategoriaID = int.Parse(txtCategoria.Text.Trim());
                 c.NombreCategoria = txtNombre.Text.Trim();
                 c.Descripcion = txtDescripcion.Text.Trim();
                 c.Estado = cbkCategoria.Checked;
@@ -112,7 +112,7 @@ namespace Minimarket
             try
             {
                 entCategoria c = new entCategoria();
-                c.ID_Categoria = int.Parse(txtCategoria.Text.Trim());
+                c.CategoriaID = int.Parse(txtCategoria.Text.Trim());
                 //cbkCategoria.Checked = false;
                 //c.Estado = cbkCategoria.Checked;
                 logCategoria.Instancia.DeshabilitarCategoria(c);
