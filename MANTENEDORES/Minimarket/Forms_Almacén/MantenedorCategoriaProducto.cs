@@ -125,6 +125,12 @@ namespace Minimarket
             groupBoxDatos.Enabled = false;
             ListarCategoria();
         }
+
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            LimpiarVariables();
+        }
     }
     
 }
