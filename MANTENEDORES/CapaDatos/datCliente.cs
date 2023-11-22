@@ -1,55 +1,55 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
-using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data;
+using System.Data.SqlClient;
 using CapaEntidad;
 
 namespace CapaDatos
 {
-    public class datProducto
+    public class datCliente
     {
         #region sigleton
         //Patron Singleton
         // Variable estática para la instancia
-        private static readonly datProducto _instancia = new datProducto();
+        private static readonly datCliente _instancia = new datCliente();
         //privado para evitar la instanciación directa
-        public static datProducto Instancia
+        public static datCliente Instancia
         {
             get
             {
-                return datProducto._instancia;
+                return datCliente._instancia;
             }
         }
         #endregion singleton
 
         #region metodos
         ////////////////////listado de Clientes
-        public List<entProducto> ListarProducto()
+        public List<entCliente> ListarCliente()
         {
             SqlCommand cmd = null;
-            List<entProducto> lista = new List<entProducto>();
+            List<entCliente> lista = new List<entCliente>();
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar(); //singleton
-                cmd = new SqlCommand("spListaProductos", cn);
+                cmd = new SqlCommand("spListaCliente", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cn.Open();
                 SqlDataReader dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
-                    entProducto c = new entProducto();
-                    c.ProductosID = Convert.ToInt32(dr["ProductosID"]);
-                    c.CategoriaID = Convert.ToInt32(dr["CategoriaID"]);
-                    c.Nombre = dr["Nombre"].ToString();
-                    c.Descripcion = dr["Descripcion"].ToString();
-                    c.Stock = Convert.ToInt32(dr["Stock"]);
-                    c.Precio = Convert.ToInt32(dr["Precio"]);
-                    c.FechaVencimiento = Convert.ToDateTime(dr["FechaVencimiento"]);
-                    c.Estado = Convert.ToBoolean(dr["Estado"]);
-                    lista.Add(c);
+                    entCliente Cli = new entCliente();
+                   
+                    Cli.ClienteID = Convert.ToInt32(dr["ClienteID"]);
+                    Cli.DNI = dr["DNI"].ToString();
+                    Cli.MetodoPagoID = Convert.ToInt32(dr["MetodoPagoID"]);
+                    Cli.Nombre = dr["Nombre"].ToString();
+                    Cli.Direccion = dr["Direccion"].ToString();
+                    Cli.Telefono = dr["Telefono"].ToString();
+                    Cli.Estado = Convert.ToBoolean(dr["Estado"]);
+                    lista.Add(Cli);
                 }
             }
             catch (Exception e)
@@ -62,26 +62,22 @@ namespace CapaDatos
             }
             return lista;
 
+        }   ///InsertarProveedor
 
-        }
-
-        ///InsertarCategoria
-
-        public Boolean InsertarProducto(entProducto Cli)
+        public Boolean InsertarCliente(entCliente Cli)
         {
             SqlCommand cmd = null;
             Boolean inserta = false;
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spInsertaProducto", cn);
+                cmd = new SqlCommand("spInsertaCliente", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@CategoriaID", Cli.CategoriaID);
-                cmd.Parameters.AddWithValue("@Nombre", Cli.Nombre);
-                cmd.Parameters.AddWithValue("@Descripcion", Cli.Descripcion);
-                cmd.Parameters.AddWithValue("@Stock", Cli.Stock);
-                cmd.Parameters.AddWithValue("@Precio", Cli.Precio);
-                cmd.Parameters.AddWithValue("@FechaVencimiento", Cli.FechaVencimiento);
+                cmd.Parameters.AddWithValue("DNI", Cli.DNI);
+                cmd.Parameters.AddWithValue("MetodopagoID", Cli.MetodoPagoID);
+                cmd.Parameters.AddWithValue("Nombre", Cli.Nombre);
+                cmd.Parameters.AddWithValue("Telefono", Cli.Telefono);
+                cmd.Parameters.AddWithValue("Direccion", Cli.Direccion);
                 cmd.Parameters.AddWithValue("@Estado", Cli.Estado);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
@@ -96,23 +92,23 @@ namespace CapaDatos
             }
             finally { cmd.Connection.Close(); }
             return inserta;
+
         }
-        public Boolean EditarProducto(entProducto Cli)
+        public Boolean EditarCliente(entCliente Cli)
         {
             SqlCommand cmd = null;
             Boolean edita = false;
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spEditaProductos", cn);
+                cmd = new SqlCommand("spEditaCliente", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@ProductosID", Cli.ProductosID);
-                cmd.Parameters.AddWithValue("@CategoriaID", Cli.CategoriaID);
+                cmd.Parameters.AddWithValue("@ClienteID", Cli.ClienteID);
+                cmd.Parameters.AddWithValue("@DNI", Cli.DNI);
+                cmd.Parameters.AddWithValue("@MetodopagoID", Cli.MetodoPagoID);
                 cmd.Parameters.AddWithValue("@Nombre", Cli.Nombre);
-                cmd.Parameters.AddWithValue("@Descripcion", Cli.Descripcion);
-                cmd.Parameters.AddWithValue("@Stock", Cli.Stock);
-                cmd.Parameters.AddWithValue("@Precio", Cli.Precio);
-                cmd.Parameters.AddWithValue("@FechaVencimiento", Cli.FechaVencimiento);
+                cmd.Parameters.AddWithValue("@Telefono", Cli.Telefono);
+                cmd.Parameters.AddWithValue("@Direccion", Cli.Direccion);
                 cmd.Parameters.AddWithValue("@Estado", Cli.Estado);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
@@ -128,16 +124,16 @@ namespace CapaDatos
             finally { cmd.Connection.Close(); }
             return edita;
         }
-        public Boolean DeshabilitarProducto(entProducto Cli)
+        public Boolean DeshabilitarCliente(entCliente Cli)
         {
             SqlCommand cmd = null;
             Boolean delete = false;
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spDeshabilitaProducto", cn);
+                cmd = new SqlCommand("spDeshabilitaCliente", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@ProductoID", Cli.ProductosID);
+                cmd.Parameters.AddWithValue("@ClienteID", Cli.ClienteID);
                 //cmd.Parameters.AddWithValue("@Estado", Cat.Estado);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
@@ -153,8 +149,6 @@ namespace CapaDatos
             finally { cmd.Connection.Close(); }
             return delete;
         }
-
-
         #endregion metodos
     }
 }

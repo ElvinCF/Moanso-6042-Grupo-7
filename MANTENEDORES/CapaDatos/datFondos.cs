@@ -9,47 +9,45 @@ using CapaEntidad;
 
 namespace CapaDatos
 {
-    public class datProducto
+    public class datFondos
     {
         #region sigleton
         //Patron Singleton
         // Variable estática para la instancia
-        private static readonly datProducto _instancia = new datProducto();
+        private static readonly datFondos _instancia = new datFondos();
         //privado para evitar la instanciación directa
-        public static datProducto Instancia
+        public static datFondos Instancia
         {
             get
             {
-                return datProducto._instancia;
+                return datFondos._instancia;
             }
         }
         #endregion singleton
 
         #region metodos
         ////////////////////listado de Clientes
-        public List<entProducto> ListarProducto()
+        public List<entFondos> ListarFondos()
         {
             SqlCommand cmd = null;
-            List<entProducto> lista = new List<entProducto>();
+            List<entFondos> lista = new List<entFondos>();
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar(); //singleton
-                cmd = new SqlCommand("spListaProductos", cn);
+                cmd = new SqlCommand("spListaCapital", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cn.Open();
                 SqlDataReader dr = cmd.ExecuteReader();
                 while (dr.Read())
                 {
-                    entProducto c = new entProducto();
-                    c.ProductosID = Convert.ToInt32(dr["ProductosID"]);
-                    c.CategoriaID = Convert.ToInt32(dr["CategoriaID"]);
-                    c.Nombre = dr["Nombre"].ToString();
-                    c.Descripcion = dr["Descripcion"].ToString();
-                    c.Stock = Convert.ToInt32(dr["Stock"]);
-                    c.Precio = Convert.ToInt32(dr["Precio"]);
-                    c.FechaVencimiento = Convert.ToDateTime(dr["FechaVencimiento"]);
-                    c.Estado = Convert.ToBoolean(dr["Estado"]);
-                    lista.Add(c);
+                    entFondos Cli = new entFondos();
+                    Cli.FondosID = Convert.ToInt32(dr["FondosID"]);
+                    Cli.Monto = Convert.ToDecimal(dr["Monto"]);
+                    Cli.Fecha = Convert.ToDateTime(dr["Fecha"]);
+                    Cli.Estado = Convert.ToBoolean(dr["Estado"]);
+
+
+                    lista.Add(Cli);
                 }
             }
             catch (Exception e)
@@ -62,26 +60,21 @@ namespace CapaDatos
             }
             return lista;
 
-
         }
 
         ///InsertarCategoria
 
-        public Boolean InsertarProducto(entProducto Cli)
+        public Boolean InsertarCapital(entFondos Cli)
         {
             SqlCommand cmd = null;
             Boolean inserta = false;
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spInsertaProducto", cn);
+                cmd = new SqlCommand("spInsertaCapital", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@CategoriaID", Cli.CategoriaID);
-                cmd.Parameters.AddWithValue("@Nombre", Cli.Nombre);
-                cmd.Parameters.AddWithValue("@Descripcion", Cli.Descripcion);
-                cmd.Parameters.AddWithValue("@Stock", Cli.Stock);
-                cmd.Parameters.AddWithValue("@Precio", Cli.Precio);
-                cmd.Parameters.AddWithValue("@FechaVencimiento", Cli.FechaVencimiento);
+                cmd.Parameters.AddWithValue("@Monto", Cli.Monto);
+                cmd.Parameters.AddWithValue("@Fecha", Cli.Fecha);
                 cmd.Parameters.AddWithValue("@Estado", Cli.Estado);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
@@ -97,22 +90,18 @@ namespace CapaDatos
             finally { cmd.Connection.Close(); }
             return inserta;
         }
-        public Boolean EditarProducto(entProducto Cli)
+        public Boolean EditarCapital(entFondos Cli)
         {
             SqlCommand cmd = null;
             Boolean edita = false;
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spEditaProductos", cn);
+                cmd = new SqlCommand("spEditaCapital", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@ProductosID", Cli.ProductosID);
-                cmd.Parameters.AddWithValue("@CategoriaID", Cli.CategoriaID);
-                cmd.Parameters.AddWithValue("@Nombre", Cli.Nombre);
-                cmd.Parameters.AddWithValue("@Descripcion", Cli.Descripcion);
-                cmd.Parameters.AddWithValue("@Stock", Cli.Stock);
-                cmd.Parameters.AddWithValue("@Precio", Cli.Precio);
-                cmd.Parameters.AddWithValue("@FechaVencimiento", Cli.FechaVencimiento);
+                cmd.Parameters.AddWithValue("@FondosID", Cli.FondosID);
+                cmd.Parameters.AddWithValue("@Monto", Cli.Monto);
+                cmd.Parameters.AddWithValue("@Fecha", Cli.Fecha);
                 cmd.Parameters.AddWithValue("@Estado", Cli.Estado);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
@@ -128,16 +117,16 @@ namespace CapaDatos
             finally { cmd.Connection.Close(); }
             return edita;
         }
-        public Boolean DeshabilitarProducto(entProducto Cli)
+        public Boolean DeshabilitarCapital(entFondos Cli)
         {
             SqlCommand cmd = null;
             Boolean delete = false;
             try
             {
                 SqlConnection cn = Conexion.Instancia.Conectar();
-                cmd = new SqlCommand("spDeshabilitaProducto", cn);
+                cmd = new SqlCommand("spDeshabilitaCapital", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@ProductoID", Cli.ProductosID);
+                cmd.Parameters.AddWithValue("@FondosID", Cli.FondosID);
                 //cmd.Parameters.AddWithValue("@Estado", Cat.Estado);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();

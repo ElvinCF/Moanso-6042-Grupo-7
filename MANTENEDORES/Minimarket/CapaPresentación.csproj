@@ -71,11 +71,11 @@
     <Compile Include="Forms_Caja\InicioCaja.Designer.cs">
       <DependentUpon>InicioCaja.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms_Caja\MantenedorCapital.cs">
+    <Compile Include="Forms_Caja\MantenedorFondos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms_Caja\MantenedorCapital.Designer.cs">
-      <DependentUpon>MantenedorCapital.cs</DependentUpon>
+    <Compile Include="Forms_Caja\MantenedorFondos.Designer.cs">
+      <DependentUpon>MantenedorFondos.cs</DependentUpon>
     </Compile>
     <Compile Include="Forms_Ventas\MantenedorCliente.cs">
       <SubType>Form</SubType>
@@ -133,8 +133,8 @@
     <EmbeddedResource Include="Forms_Caja\InicioCaja.resx">
       <DependentUpon>InicioCaja.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms_Caja\MantenedorCapital.resx">
-      <DependentUpon>MantenedorCapital.cs</DependentUpon>
+    <EmbeddedResource Include="Forms_Caja\MantenedorFondos.resx">
+      <DependentUpon>MantenedorFondos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms_Ventas\MantenedorCliente.resx">
       <DependentUpon>MantenedorCliente.cs</DependentUpon>

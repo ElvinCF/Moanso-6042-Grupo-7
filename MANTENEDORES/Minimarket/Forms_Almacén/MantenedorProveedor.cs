@@ -39,6 +39,8 @@ namespace Minimarket
         private void LimpiarVariables()
         {
             txtProveedor.Text = "";
+            txtCiudad.Text = "";
+            txtRuc.Text = "";
             txtNombre.Text = "";
             txtRazon.Text = " ";
             txtTelefono.Text = " ";
@@ -109,11 +111,13 @@ namespace Minimarket
         {
             DataGridViewRow filaActual = dgProveedor.Rows[e.RowIndex];
             txtProveedor.Text = filaActual.Cells[0].Value.ToString();
-            txtNombre.Text = filaActual.Cells[1].Value.ToString();
-            txtRazon.Text = filaActual.Cells[2].Value.ToString();
-            txtTelefono.Text = filaActual.Cells[3].Value.ToString();
-            txtDireccion.Text = filaActual.Cells[4].Value.ToString();
-            cbkProveedor.Checked = Convert.ToBoolean(filaActual.Cells[5].Value);
+            txtRuc.Text = filaActual.Cells[1].Value.ToString();
+            txtCiudad.Text = filaActual.Cells[2].Value.ToString();
+            txtNombre.Text = filaActual.Cells[3].Value.ToString();
+            txtRazon.Text = filaActual.Cells[4].Value.ToString();
+            txtTelefono.Text = filaActual.Cells[5].Value.ToString();
+            txtDireccion.Text = filaActual.Cells[6].Value.ToString();
+            cbkProveedor.Checked = Convert.ToBoolean(filaActual.Cells[7].Value);
         }
 
         private void btnDeshabilitar_Click(object sender, EventArgs e)
@@ -133,6 +137,11 @@ namespace Minimarket
             LimpiarVariables();
             groupBoxProveedor.Enabled = false;
             ListarProveedor();
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            LimpiarVariables();
         }
     }
 }

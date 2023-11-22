@@ -77,7 +77,7 @@ namespace Minimarket
 
         private void button7_Click_1(object sender, EventArgs e)
         {
-            Form formulario = new MantenedorCapital();
+            Form formulario = new MantenedorFondos();
             formulario.Show();
         }
     }
