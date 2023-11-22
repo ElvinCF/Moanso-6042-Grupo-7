@@ -74,7 +74,7 @@
             this.button3.Location = new System.Drawing.Point(17, 343);
             this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(152, 62);
+            this.button3.Size = new System.Drawing.Size(175, 62);
             this.button3.TabIndex = 4;
             this.button3.Text = "OrdenCompra";
             this.button3.UseVisualStyleBackColor = true;
@@ -98,7 +98,7 @@
             this.button5.Location = new System.Drawing.Point(222, 343);
             this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(143, 62);
+            this.button5.Size = new System.Drawing.Size(157, 62);
             this.button5.TabIndex = 6;
             this.button5.Text = "Administrar Proveedor";
             this.button5.UseVisualStyleBackColor = true;
@@ -184,7 +184,7 @@
             this.button7.Location = new System.Drawing.Point(420, 343);
             this.button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(154, 62);
+            this.button7.Size = new System.Drawing.Size(181, 62);
             this.button7.TabIndex = 15;
             this.button7.Text = "FondosEmpresa";
             this.button7.UseVisualStyleBackColor = true;
