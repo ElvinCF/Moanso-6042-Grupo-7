@@ -48,6 +48,10 @@ namespace CapaLogica
             datProducto.Instancia.DeshabilitarProducto(Cli);
 
         }
+        public entProducto buscarProducto(int idProducto)
+        {
+            return datProducto.Instancia.buscarProducto(idProducto);
+        }
 
         #endregion metodos
     }

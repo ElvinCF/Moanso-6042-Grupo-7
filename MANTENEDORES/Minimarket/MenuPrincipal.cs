@@ -80,5 +80,11 @@ namespace Minimarket
             Form formulario = new MantenedorFondos();
             formulario.Show();
         }
+
+        private void button2_Click_1(object sender, EventArgs e)
+        {
+            Form formulario = new Venta();
+            formulario.Show();
+        }
     }
 }

@@ -97,7 +97,8 @@ namespace CapaDatos
             finally { cmd.Connection.Close(); }
             return inserta;
         }
-        public Boolean EditarProducto(entProducto Cli)
+        
+            public Boolean EditarProducto(entProducto Cli)
         {
             SqlCommand cmd = null;
             Boolean edita = false;
@@ -137,7 +138,7 @@ namespace CapaDatos
                 SqlConnection cn = Conexion.Instancia.Conectar();
                 cmd = new SqlCommand("spDeshabilitaProducto", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.Parameters.AddWithValue("@ProductoID", Cli.ProductosID);
+                cmd.Parameters.AddWithValue("@ProductosID", Cli.ProductosID);
                 //cmd.Parameters.AddWithValue("@Estado", Cat.Estado);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
@@ -153,8 +154,48 @@ namespace CapaDatos
             finally { cmd.Connection.Close(); }
             return delete;
         }
+        public entProducto buscarProducto(int idProducto)
+        {
+            SqlCommand cmd = null;
+            entProducto c = new entProducto();
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar(); //singleton
+                cmd = new SqlCommand("spBuscarProducto", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@ProductosID", idProducto);
+
+                cn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+
+                    c.ProductosID = Convert.ToInt32(dr["ProductoID"]);
+                    c.Nombre = dr["Nombre"].ToString();
+                    c.Stock = Convert.ToInt32(dr["Stock"]);
+                    c.FechaVencimiento = Convert.ToDateTime(dr["FechaVencimiento"]);
+
+
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                cmd.Connection.Close();
+            }
+            return c;
+
+
+        }
 
 
         #endregion metodos
+
     }
 }
+
+
+

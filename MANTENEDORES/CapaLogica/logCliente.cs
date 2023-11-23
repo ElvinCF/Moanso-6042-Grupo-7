@@ -48,6 +48,10 @@ namespace CapaLogica
             datCliente.Instancia.DeshabilitarCliente(Cli);
 
         }
+        public entCliente buscarCliente(int idCliente)
+        {
+            return datCliente.Instancia.buscarCliente(idCliente);
+        }
         #endregion metodos
 
     }

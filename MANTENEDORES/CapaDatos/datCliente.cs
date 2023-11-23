@@ -149,6 +149,43 @@ namespace CapaDatos
             finally { cmd.Connection.Close(); }
             return delete;
         }
+        public entCliente buscarCliente(int idCliente)
+        {
+            SqlCommand cmd = null;
+            entCliente c = new entCliente();
+            try
+            {
+                SqlConnection cn = Conexion.Instancia.Conectar(); //singleton
+                cmd = new SqlCommand("spBuscarCliente", cn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@prmIdCliente", idCliente);
+
+                cn.Open();
+                SqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+
+                    c.ClienteID = Convert.ToInt32(dr["ClienteID"]);
+                    c.DNI = dr["DNI"].ToString();
+                    c.Nombre = dr["Nombre"].ToString();
+                    c.Direccion = dr["Direccion"].ToString();
+                    c.Telefono = (dr["Telefono"].ToString());
+                    c.Estado = Convert.ToBoolean(dr["Estado"]);
+
+                }
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                cmd.Connection.Close();
+            }
+            return c;
+
+
+        }
         #endregion metodos
     }
 }
