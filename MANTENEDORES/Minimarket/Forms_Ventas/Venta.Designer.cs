@@ -85,13 +85,13 @@
             this.domainUpDown1 = new System.Windows.Forms.DomainUpDown();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.button9 = new System.Windows.Forms.Button();
             this.gvCarrito = new System.Windows.Forms.DataGridView();
             this.IdProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nombreProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.precioProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.cantidadProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.subTotalProducto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button9 = new System.Windows.Forms.Button();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.cboDni = new System.Windows.Forms.ComboBox();
             this.label19 = new System.Windows.Forms.Label();
@@ -110,15 +110,15 @@
             this.label29 = new System.Windows.Forms.Label();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.labelTotal = new System.Windows.Forms.Label();
-            this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.label24 = new System.Windows.Forms.Label();
-            this.lblVuelto = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.txtPagoCon = new System.Windows.Forms.TextBox();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.cboTipoPago = new System.Windows.Forms.ComboBox();
             this.label15 = new System.Windows.Forms.Label();
             this.btnTerminarVenta = new System.Windows.Forms.Button();
+            this.txtPagoCon = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.lblVuelto = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -267,7 +267,7 @@
             this.panel1.Controls.Add(this.textBox9);
             this.panel1.Controls.Add(this.label18);
             this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.panel1.Margin = new System.Windows.Forms.Padding(5);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1664, 62);
             this.panel1.TabIndex = 35;
@@ -275,7 +275,7 @@
             // dateTimePicker2
             // 
             this.dateTimePicker2.Location = new System.Drawing.Point(591, 17);
-            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dateTimePicker2.Margin = new System.Windows.Forms.Padding(4);
             this.dateTimePicker2.Name = "dateTimePicker2";
             this.dateTimePicker2.Size = new System.Drawing.Size(265, 22);
             this.dateTimePicker2.TabIndex = 52;
@@ -700,25 +700,13 @@
             this.groupBox6.BackColor = System.Drawing.Color.LightSteelBlue;
             this.groupBox6.Controls.Add(this.gvCarrito);
             this.groupBox6.Location = new System.Drawing.Point(8, 332);
-            this.groupBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox6.Margin = new System.Windows.Forms.Padding(4);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox6.Padding = new System.Windows.Forms.Padding(4);
             this.groupBox6.Size = new System.Drawing.Size(939, 275);
             this.groupBox6.TabIndex = 59;
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "CARRITO (DETALLE DE PEDIDO)";
-            // 
-            // button9
-            // 
-            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.button9.Location = new System.Drawing.Point(751, 60);
-            this.button9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(165, 36);
-            this.button9.TabIndex = 54;
-            this.button9.Text = "Quitar del Carrito";
-            this.button9.UseVisualStyleBackColor = false;
-            this.button9.Click += new System.EventHandler(this.btnQuitarProduto_Click);
             // 
             // gvCarrito
             // 
@@ -768,6 +756,18 @@
             this.subTotalProducto.HeaderText = "Sub Total";
             this.subTotalProducto.MinimumWidth = 6;
             this.subTotalProducto.Name = "subTotalProducto";
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.button9.Location = new System.Drawing.Point(751, 60);
+            this.button9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(165, 36);
+            this.button9.TabIndex = 54;
+            this.button9.Text = "Quitar del Carrito";
+            this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.btnQuitarProduto_Click);
             // 
             // groupBox7
             // 
@@ -969,70 +969,17 @@
             this.labelTotal.TabIndex = 58;
             this.labelTotal.Text = "0.00";
             // 
-            // groupBox10
-            // 
-            this.groupBox10.Controls.Add(this.label24);
-            this.groupBox10.Controls.Add(this.lblVuelto);
-            this.groupBox10.Controls.Add(this.label23);
-            this.groupBox10.Controls.Add(this.txtPagoCon);
-            this.groupBox10.Location = new System.Drawing.Point(12, 94);
-            this.groupBox10.Margin = new System.Windows.Forms.Padding(4);
-            this.groupBox10.Name = "groupBox10";
-            this.groupBox10.Padding = new System.Windows.Forms.Padding(4);
-            this.groupBox10.Size = new System.Drawing.Size(341, 68);
-            this.groupBox10.TabIndex = 57;
-            this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "EFECTIVO";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(193, 33);
-            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(70, 16);
-            this.label24.TabIndex = 0;
-            this.label24.Text = "Vuelto: S/. ";
-            // 
-            // lblVuelto
-            // 
-            this.lblVuelto.AutoSize = true;
-            this.lblVuelto.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblVuelto.Location = new System.Drawing.Point(276, 28);
-            this.lblVuelto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblVuelto.Name = "lblVuelto";
-            this.lblVuelto.Size = new System.Drawing.Size(49, 25);
-            this.lblVuelto.TabIndex = 3;
-            this.lblVuelto.Text = "0.00";
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(11, 33);
-            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(87, 16);
-            this.label23.TabIndex = 0;
-            this.label23.Text = "Pagó con: S/.";
-            // 
-            // txtPagoCon
-            // 
-            this.txtPagoCon.Location = new System.Drawing.Point(116, 28);
-            this.txtPagoCon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtPagoCon.Name = "txtPagoCon";
-            this.txtPagoCon.Size = new System.Drawing.Size(52, 22);
-            this.txtPagoCon.TabIndex = 51;
-            // 
             // btnCancelar
             // 
             this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.btnCancelar.Location = new System.Drawing.Point(117, 420);
+            this.btnCancelar.Location = new System.Drawing.Point(99, 417);
             this.btnCancelar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCancelar.Name = "btnCancelar";
-            this.btnCancelar.Size = new System.Drawing.Size(165, 36);
+            this.btnCancelar.Size = new System.Drawing.Size(203, 36);
             this.btnCancelar.TabIndex = 54;
-            this.btnCancelar.Text = "CANCELAR VENTA";
+            this.btnCancelar.Text = "CANCELAR";
             this.btnCancelar.UseVisualStyleBackColor = false;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
             // 
             // cboTipoPago
             // 
@@ -1069,6 +1016,64 @@
             this.btnTerminarVenta.TabIndex = 54;
             this.btnTerminarVenta.Text = "CONFIRMAR COBRO";
             this.btnTerminarVenta.UseVisualStyleBackColor = false;
+            this.btnTerminarVenta.Click += new System.EventHandler(this.btnTerminarVenta_Click);
+            // 
+            // txtPagoCon
+            // 
+            this.txtPagoCon.Location = new System.Drawing.Point(116, 28);
+            this.txtPagoCon.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtPagoCon.Name = "txtPagoCon";
+            this.txtPagoCon.Size = new System.Drawing.Size(52, 22);
+            this.txtPagoCon.TabIndex = 51;
+            this.txtPagoCon.Click += new System.EventHandler(this.txtPagoCon_TextChanged);
+            this.txtPagoCon.TextChanged += new System.EventHandler(this.txtPagoCon_TextChanged);
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(11, 33);
+            this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(87, 16);
+            this.label23.TabIndex = 0;
+            this.label23.Text = "Pagó con: S/.";
+            // 
+            // lblVuelto
+            // 
+            this.lblVuelto.AutoSize = true;
+            this.lblVuelto.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblVuelto.Location = new System.Drawing.Point(276, 28);
+            this.lblVuelto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblVuelto.Name = "lblVuelto";
+            this.lblVuelto.Size = new System.Drawing.Size(49, 25);
+            this.lblVuelto.TabIndex = 3;
+            this.lblVuelto.Text = "0.00";
+            this.lblVuelto.Click += new System.EventHandler(this.lblVuelto_Click);
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(193, 33);
+            this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(70, 16);
+            this.label24.TabIndex = 0;
+            this.label24.Text = "Vuelto: S/. ";
+            // 
+            // groupBox10
+            // 
+            this.groupBox10.Controls.Add(this.label24);
+            this.groupBox10.Controls.Add(this.lblVuelto);
+            this.groupBox10.Controls.Add(this.label23);
+            this.groupBox10.Controls.Add(this.txtPagoCon);
+            this.groupBox10.Location = new System.Drawing.Point(12, 94);
+            this.groupBox10.Margin = new System.Windows.Forms.Padding(4);
+            this.groupBox10.Name = "groupBox10";
+            this.groupBox10.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBox10.Size = new System.Drawing.Size(341, 68);
+            this.groupBox10.TabIndex = 57;
+            this.groupBox10.TabStop = false;
+            this.groupBox10.Text = "EFECTIVO";
             // 
             // Venta
             // 
@@ -1080,7 +1085,7 @@
             this.Controls.Add(this.groupBox7);
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.panel1);
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "Venta";
             this.Text = "MantenedorPedidoCliente";
             this.panel1.ResumeLayout(false);
@@ -1196,14 +1201,14 @@
         private System.Windows.Forms.Label label29;
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.Label labelTotal;
+        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.ComboBox cboTipoPago;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Button btnTerminarVenta;
         private System.Windows.Forms.GroupBox groupBox10;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label lblVuelto;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.TextBox txtPagoCon;
-        private System.Windows.Forms.Button btnCancelar;
-        private System.Windows.Forms.ComboBox cboTipoPago;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Button btnTerminarVenta;
     }
 }

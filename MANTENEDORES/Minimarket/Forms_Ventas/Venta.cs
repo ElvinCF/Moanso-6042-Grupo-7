@@ -155,6 +155,7 @@ namespace Minimarket
                     Total += Convert.ToDecimal(Fila.Cells[4].Value);
                 }
                 labelTotal.Text = Total.ToString();
+                ActualizarVuelto();
             }
         }
 
@@ -171,18 +172,20 @@ namespace Minimarket
 
         private void txtPagoCon_TextChanged(object sender, EventArgs e)
         {
-            decimal total = Convert.ToDecimal(labelTotal.Text);
-            if (total > 0 && Convert.ToDecimal(txtPagoCon.Text) >= total)
+            ActualizarVuelto();
+        }
+        private void ActualizarVuelto()
+        {
+            if (decimal.TryParse(labelTotal.Text, out decimal total) && total > 0 &&
+                decimal.TryParse(txtPagoCon.Text, out decimal pago) && pago >= total)
             {
-                lblVuelto.Text = ((Convert.ToDecimal(txtPagoCon.Text)) - total).ToString();
-
+                lblVuelto.Text = (pago - total).ToString();
             }
             else
             {
                 lblVuelto.Text = "0.0";
             }
         }
-
         private void lblVuelto_Click(object sender, EventArgs e)
         {
 
@@ -190,39 +193,11 @@ namespace Minimarket
 
         private void btnTerminarVenta_Click(object sender, EventArgs e)
         {
-            int idPed;
-            try
-            {
-                entVenta Ped = new entVenta();
-                entCliente c = new entCliente();
-                entProducto prod = new entProducto();
-
-                Ped.fechaVenta = Convert.ToDateTime(dateTimePicker1.Value);
-                Ped.TotPedido = Convert.ToDouble(labelTotal.Text);
-
-                c.ClienteID = int.Parse(cboDni.SelectedValue.ToString());
-
-                Ped.idCliente = c;
-                Ped.idCliente.ClienteID = c.ClienteID;
-
-                GrabarDetalle();
-                Ped.DetPedidos = lstDetPedido;
 
 
-                //Ped.estPedido = cbkEstado.Checked;
-
-                idPed = logVenta.Instancia.InsertarVenta(Ped);
-
-                //MessageBox.Show(""+idPed);
+            Close();
 
 
-                Close();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("error" + ex);
-                throw ex;
-            }
 
         }
         private void GrabarDetalle()
@@ -245,6 +220,27 @@ namespace Minimarket
 
                 lstDetPedido.Add(dPed);
             }
+
+        }
+        private void LimpiarVariables()
+        {
+            cboDni.Text = "";
+            cboTipoPago.Text = "";
+            txtNombreCliente.Text = "";
+            txtTelefono.Text = "";
+            cboProducto.Text = "";
+            txtPrecio.Text = " ";
+            txtCantidad.Text = " ";
+            txtPagoCon.Text = " ";
+            //cbkCategoria.Checked = false;
+        }
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            LimpiarVariables();
+        }
+
+        private void btnAnular_Click(object sender, EventArgs e)
+        {
 
         }
     }
