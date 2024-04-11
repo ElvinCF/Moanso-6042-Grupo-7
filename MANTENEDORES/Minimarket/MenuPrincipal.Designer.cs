@@ -130,7 +130,7 @@
             this.textBox1.TabIndex = 3;
             this.textBox1.Text = "Bienvenido a nuestro prototipo de software de Sistema de Ventas\r\n\r\nEstamos desarr" +
     "ollando un software integral de gestión para Negocios y Servicios La Plaza S.R.L" +
-    "\r\n\r\nCLASE: 6042";
+    "\r\n";
             // 
             // label1
             // 
