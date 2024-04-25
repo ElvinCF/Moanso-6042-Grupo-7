@@ -145,7 +145,7 @@
             // 
             // txtDni
             // 
-            this.txtDni.Location = new System.Drawing.Point(208, 82);
+            this.txtDni.Location = new System.Drawing.Point(208, 92);
             this.txtDni.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDni.Name = "txtDni";
             this.txtDni.Size = new System.Drawing.Size(165, 22);
@@ -155,7 +155,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft JhengHei UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(21, 82);
+            this.label8.Location = new System.Drawing.Point(21, 92);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(49, 25);
             this.label8.TabIndex = 20;
@@ -176,7 +176,7 @@
             // btnModificar
             // 
             this.btnModificar.Font = new System.Drawing.Font("Modern No. 20", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnModificar.Location = new System.Drawing.Point(180, 369);
+            this.btnModificar.Location = new System.Drawing.Point(183, 369);
             this.btnModificar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnModificar.Name = "btnModificar";
             this.btnModificar.Size = new System.Drawing.Size(136, 36);
@@ -215,7 +215,7 @@
             // 
             // txtNombre
             // 
-            this.txtNombre.Location = new System.Drawing.Point(208, 185);
+            this.txtNombre.Location = new System.Drawing.Point(208, 162);
             this.txtNombre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(165, 22);
@@ -243,7 +243,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(21, 234);
+            this.label6.Location = new System.Drawing.Point(21, 217);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(94, 25);
             this.label6.TabIndex = 9;
@@ -253,7 +253,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(21, 183);
+            this.label5.Location = new System.Drawing.Point(21, 159);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(85, 25);
             this.label5.TabIndex = 8;
