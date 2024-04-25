@@ -33,7 +33,6 @@
             this.Label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBoxCliente = new System.Windows.Forms.GroupBox();
-            this.txtMetodo = new System.Windows.Forms.TextBox();
             this.cbkCliente = new System.Windows.Forms.CheckBox();
             this.txtDni = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -47,7 +46,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
@@ -110,7 +108,6 @@
             // 
             // groupBoxCliente
             // 
-            this.groupBoxCliente.Controls.Add(this.txtMetodo);
             this.groupBoxCliente.Controls.Add(this.cbkCliente);
             this.groupBoxCliente.Controls.Add(this.txtDni);
             this.groupBoxCliente.Controls.Add(this.label8);
@@ -124,7 +121,6 @@
             this.groupBoxCliente.Controls.Add(this.label7);
             this.groupBoxCliente.Controls.Add(this.label6);
             this.groupBoxCliente.Controls.Add(this.label5);
-            this.groupBoxCliente.Controls.Add(this.label3);
             this.groupBoxCliente.Controls.Add(this.label2);
             this.groupBoxCliente.Location = new System.Drawing.Point(12, 80);
             this.groupBoxCliente.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -134,14 +130,6 @@
             this.groupBoxCliente.TabIndex = 267;
             this.groupBoxCliente.TabStop = false;
             this.groupBoxCliente.Text = "Datos del Cliente";
-            // 
-            // txtMetodo
-            // 
-            this.txtMetodo.Location = new System.Drawing.Point(208, 132);
-            this.txtMetodo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtMetodo.Name = "txtMetodo";
-            this.txtMetodo.Size = new System.Drawing.Size(165, 22);
-            this.txtMetodo.TabIndex = 23;
             // 
             // cbkCliente
             // 
@@ -271,16 +259,6 @@
             this.label5.TabIndex = 8;
             this.label5.Text = "Nombre";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(21, 132);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(165, 25);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Metodo de pago:";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -337,7 +315,7 @@
             this.dgvCliente.RowTemplate.Height = 24;
             this.dgvCliente.Size = new System.Drawing.Size(584, 361);
             this.dgvCliente.TabIndex = 272;
-            this.dgvCliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgProveedor_CellContentClick);
+            this.dgvCliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgCliente);
             // 
             // btnDeshabilitar
             // 
@@ -384,7 +362,6 @@
         internal System.Windows.Forms.Label label1;
         private System.Windows.Forms.GroupBox groupBoxCliente;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
@@ -403,6 +380,5 @@
         private System.Windows.Forms.DataGridView dgvCliente;
         private System.Windows.Forms.CheckBox cbkCliente;
         private System.Windows.Forms.Button btnDeshabilitar;
-        private System.Windows.Forms.TextBox txtMetodo;
     }
 }

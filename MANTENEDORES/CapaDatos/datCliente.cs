@@ -44,7 +44,6 @@ namespace CapaDatos
                    
                     Cli.ClienteID = Convert.ToInt32(dr["ClienteID"]);
                     Cli.DNI = dr["DNI"].ToString();
-                    Cli.MetodoPagoID = Convert.ToInt32(dr["MetodoPagoID"]);
                     Cli.Nombre = dr["Nombre"].ToString();
                     Cli.Direccion = dr["Direccion"].ToString();
                     Cli.Telefono = dr["Telefono"].ToString();
@@ -74,10 +73,9 @@ namespace CapaDatos
                 cmd = new SqlCommand("spInsertaCliente", cn);
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("DNI", Cli.DNI);
-                cmd.Parameters.AddWithValue("MetodopagoID", Cli.MetodoPagoID);
                 cmd.Parameters.AddWithValue("Nombre", Cli.Nombre);
-                cmd.Parameters.AddWithValue("Telefono", Cli.Telefono);
                 cmd.Parameters.AddWithValue("Direccion", Cli.Direccion);
+                cmd.Parameters.AddWithValue("Telefono", Cli.Telefono);
                 cmd.Parameters.AddWithValue("@Estado", Cli.Estado);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();
@@ -105,10 +103,9 @@ namespace CapaDatos
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.Parameters.AddWithValue("@ClienteID", Cli.ClienteID);
                 cmd.Parameters.AddWithValue("@DNI", Cli.DNI);
-                cmd.Parameters.AddWithValue("@MetodopagoID", Cli.MetodoPagoID);
                 cmd.Parameters.AddWithValue("@Nombre", Cli.Nombre);
-                cmd.Parameters.AddWithValue("@Telefono", Cli.Telefono);
                 cmd.Parameters.AddWithValue("@Direccion", Cli.Direccion);
+                cmd.Parameters.AddWithValue("@Telefono", Cli.Telefono);
                 cmd.Parameters.AddWithValue("@Estado", Cli.Estado);
                 cn.Open();
                 int i = cmd.ExecuteNonQuery();

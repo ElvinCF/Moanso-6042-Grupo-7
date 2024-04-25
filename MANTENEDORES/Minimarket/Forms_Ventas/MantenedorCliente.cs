@@ -40,10 +40,9 @@ namespace Minimarket
         {
             txtCliente.Text = "";
             txtDni.Text = "";
-            txtMetodo.Text = "";
             txtNombre.Text = "";
-            txtTelefono.Text = " ";
             txtDireccion.Text = " ";
+            txtTelefono.Text = " ";
             //cbkCategoria.Checked = false;
         }
 
@@ -55,10 +54,9 @@ namespace Minimarket
                 entCliente c = new entCliente();
                 
                 c.DNI = txtDni.Text.Trim();
-                c.MetodoPagoID = int.Parse(txtMetodo.Text.Trim());
                 c.Nombre = txtNombre.Text.Trim();
-                c.Telefono = txtTelefono.Text.Trim();
                 c.Direccion = txtDireccion.Text.Trim();
+                c.Telefono = txtTelefono.Text.Trim();
                 c.Estado = cbkCliente.Checked;
                 logCliente.Instancia.InsertarCliente(c);
             }
@@ -89,7 +87,6 @@ namespace Minimarket
                 
                 c.ClienteID = int.Parse(txtCliente.Text.Trim());
                 c.DNI = txtDni.Text.Trim();
-                c.MetodoPagoID = int.Parse(txtMetodo.Text.Trim());
                 c.Nombre = txtNombre.Text.Trim();
                 c.Direccion = txtDireccion.Text.Trim();
                 c.Telefono = txtTelefono.Text.Trim();
@@ -106,16 +103,15 @@ namespace Minimarket
 
         }
 
-        private void dgProveedor_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dgCliente (object sender, DataGridViewCellEventArgs e)
         {
             DataGridViewRow filaActual = dgvCliente.Rows[e.RowIndex];
             txtCliente.Text = filaActual.Cells[0].Value.ToString();
             txtDni.Text = filaActual.Cells[1].Value.ToString();
-            txtMetodo.Text = filaActual.Cells[2].Value.ToString();
-            txtNombre.Text = filaActual.Cells[3].Value.ToString();
+            txtNombre.Text = filaActual.Cells[2].Value.ToString();
+            txtDireccion.Text = filaActual.Cells[3].Value.ToString();
             txtTelefono.Text = filaActual.Cells[4].Value.ToString();
-            txtDireccion.Text = filaActual.Cells[5].Value.ToString();
-            cbkCliente.Checked = Convert.ToBoolean(filaActual.Cells[6].Value);
+            cbkCliente.Checked = Convert.ToBoolean(filaActual.Cells[5].Value);
         }
 
         private void btnDeshabilitar_Click(object sender, EventArgs e)
@@ -141,7 +137,5 @@ namespace Minimarket
         {
             LimpiarVariables();
         }
-
-
     }
 }

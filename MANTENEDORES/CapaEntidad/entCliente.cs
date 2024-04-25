@@ -10,7 +10,6 @@ namespace CapaEntidad
     {
         public int ClienteID { get; set; }
         public string DNI { get; set; }
-        public int MetodoPagoID { get; set; }
         public string Nombre { get; set; }
         public string Direccion { get; set; }
         public string Telefono { get; set; }
