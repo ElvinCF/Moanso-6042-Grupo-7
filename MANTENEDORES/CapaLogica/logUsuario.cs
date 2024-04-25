@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using CapaDatos;
+using CapaEntidad;
 
 namespace CapaLogica
 {
-    internal class logUsuario
+    public class logUsuario
     {
         #region sigleton
         //Patron Singleton

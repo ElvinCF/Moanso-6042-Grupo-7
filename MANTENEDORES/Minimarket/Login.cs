@@ -1,4 +1,6 @@
-﻿using System;
+﻿using CapaEntidad;
+using CapaLogica;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -17,7 +19,7 @@ namespace Minimarket
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
             if (txtUsuario.Text == "" || txtPassword.Text == "")
             {
@@ -39,9 +41,28 @@ namespace Minimarket
             }
         }
 
-        private void bntClose_Click(object sender, EventArgs e)
+        private void btnClose_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnMin_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void btnShowPassword_Click(object sender, EventArgs e)
+        {
+            if (txtPassword.PasswordChar == '*')
+            {
+                btnShowPassword.Image = Minimarket.Properties.Resources.ver;
+                txtPassword.PasswordChar = '\0';
+            }
+            else
+            {
+                btnShowPassword.Image = Minimarket.Properties.Resources.ojo;
+                txtPassword.PasswordChar = '*';
+            }
         }
     }
 }

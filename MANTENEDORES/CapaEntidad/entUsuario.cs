@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace CapaEntidad
 {
-    internal class entUsuario
+    public class entUsuario
     {
         public String IDUSUARIO { get; set; }
         public int ESTADO { get; set; }

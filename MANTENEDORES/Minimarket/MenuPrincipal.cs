@@ -8,14 +8,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaEntidad;
 
 namespace Minimarket
 {
     public partial class MenuPrincipal : Form
     {
-        public MenuPrincipal()
+        public MenuPrincipal(entUsuario usuario)
         {
             InitializeComponent();
+            
         }
 
         private void MenuPrincipal_Load(object sender, EventArgs e)
